@@ -253,7 +253,7 @@ ul.header_list {
   padding: 40px;
 }
 .section h2.title {
-  font-family: 'Poppins', sans-serif;
+  font-family: arial,"Microsoft JhengHei","微軟正黑體",sans-serif !important;
   color: #7d7d7d;
   font-size: 24px;
 }
@@ -351,7 +351,7 @@ ul.header_list {
 .thebeiginning:after {
   position: absolute;
   content:'一開始的相遇';
-  font-family: 'Poppins', sans-serif;
+  font-family: arial,"Microsoft JhengHei","微軟正黑體",sans-serif !important;
   font-size: 64px;
   color: #ebf3f5;
   width: 140%;
@@ -443,7 +443,7 @@ ul.header_list {
 }
 .index-exp .area-section {
   border-radius: 20px;
-  border: 1px solid #e6e6e6;
+  /* border: 1px solid #e6e6e6; */
   padding: 20px 40px;
   margin-bottom: 20px;
   display: flex;
@@ -453,7 +453,7 @@ ul.header_list {
 }
 .index-exp .area-section:hover {
   transition: all 0.5s ease-in-out;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 .index-exp .area-section span.title {
   font-size: 16px;
