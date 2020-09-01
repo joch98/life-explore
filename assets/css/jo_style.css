@@ -104,6 +104,7 @@ ul.header_list {
 .navbar .navbar-nav .dropdown-item:hover{
   color: #ea5513;
 }
+
 .indicators li::before {
   content: "";
   position: absolute;
