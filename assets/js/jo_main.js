@@ -28,4 +28,37 @@ $(document).ready(function() {
       $(sel).toggleClass('in');
       $(sel2).toggleClass('out');
   });
+  if($(window).width() < 420) {
+    $(document).scroll(function() {
+      var y = $(this).scrollTop();
+      console.log(y)
+      if (y > 1400 && y < 1900) {
+        $('.discover-entry').addClass('mobile-active')
+      }  
+      if (y > 1900 && y < 2250) {
+        $('.discover-entry').removeClass('mobile-active')
+        $('.discover').addClass('mobile-active')
+      }
+      if (y > 2250 && y < 2850) {
+        $('.discover').removeClass('mobile-active')
+        $('.energy').addClass('mobile-active')
+      }
+      if (y > 2850 && y < 3100) {
+        $('.energy').removeClass('mobile-active')
+        $('.relationship-entry').addClass('mobile-active')
+      }
+      if (y > 3100 && y < 3500) {
+        $('.relationship-entry').removeClass('mobile-active')
+        $('.relationship').addClass('mobile-active')
+      }
+      if (y > 3500 && y < 3800) {
+        $('.relationship').removeClass('mobile-active')
+        $('.relationship-level').addClass('mobile-active')
+      }
+      if (y > 3800 && y < 4200) {
+        $('.relationship-level').removeClass('mobile-active')
+        $('.cases').addClass('mobile-active')
+      } 
+    });
+  }
 });
