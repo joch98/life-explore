@@ -40,9 +40,12 @@ img.logo-img {
   width: 150px;
 }
 ul.header_list {
-  position: absolute;
+  /* position: absolute;
   bottom: 0;
-  right: 0;
+  right: 0; */
+  vertical-align: text-bottom;
+  height: 80px;
+  line-height: 120px;
 }
 
 .header_list > li {
@@ -849,8 +852,24 @@ ul.tab-selection li img{
 .scrollup:focus {
 	color:#fff;
 }
-@media (max-width:768px) {
+@media screen and (max-width:768px) {
+  .course-section .content.mobile-active {
+    visibility: visible;
+    opacity: 1;
+  }
+  .section.small_pb, .footer_top.small_pb {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
   .search-container {
     display: none;
+  }
+  .section h2 .large-eng {
+    font-size: 34px;
+    display: block;
+    margin-left: 0;
+  }
+  .thebeiginning:after {
+    font-size: 40px;
   }
 }
