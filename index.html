@@ -12,8 +12,6 @@
 <title>Explore-Life</title>
 <!-- Favicon Icon -->
 <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
-<!-- Animation CSS -->
-<link rel="stylesheet" href="assets/css/animate.css">	
 <!-- Latest Bootstrap min CSS -->
 <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
 <!-- Icon Font CSS -->
@@ -27,9 +25,37 @@
 <link rel="stylesheet" href="assets/css/slick-theme.css">
 <!-- Style CSS -->
 <link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="assets/css/responsive.css">
 <link rel="stylesheet" href="assets/css/ekko-lightbox.css">
 <link rel="stylesheet" href="assets/css/jo_style.css">
+<style>
+    @media (max-width: 992px) {
+    .navbar-collapse {
+        position: fixed;
+        top: 135px;
+        left: 0;
+        width: 75%;
+        height: auto;
+        background: #fff;
+    }
+
+    .navbar-collapse.collapsing {
+        left: -75%;
+        transition: height 0s ease;
+    }
+
+    .navbar-collapse.show {
+        left: 0;
+        transition: left 300ms ease-in-out;
+    }
+
+    .navbar-toggler.collapsed ~ .navbar-collapse {
+        transition: left 500ms ease-in-out;
+    }
+    .nav-fixed .navbar-collapse {
+        top: 38px;
+    }
+}
+</style>
 </head>
 
 <body>
@@ -50,7 +76,6 @@
                             </ul>
                         </div>
                     </div>
-                	
                 </div>
             </div>
         </div>
@@ -58,7 +83,7 @@
     <div class="bottom_header main_menu_uppercase">
     	<div class="container pos-relative">
             <nav class="navbar navbar-expand-lg"> 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-expanded="false"> 
+                <button class="navbar-toggler" type="button" data-toggle="slide-collapse" data-target="#navbarContent" aria-expanded="false"> 
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarContent">
@@ -108,6 +133,10 @@
                             <a class="nav-link nav_item" href="#">聯絡我們</a>
                         </li>
                     </ul>
+                    <div class="search-container">
+                        <input type="text" class="search-bar">
+                        <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
                 </div>
             </nav>
             <div class="search-container">
@@ -646,5 +675,11 @@
 <script src="assets/js/scripts.js"></script>
 <script src="assets/js/ekko-lightbox.min.js"></script>
 <script src="assets/js/jo_main.js"></script>
+<script>
+$('[data-toggle="slide-collapse"]').on('click', function() {
+    $navMenuCont = $($(this).data('target'));
+    $navMenuCont.animate({'width':'toggle'}, 350);
+});
+</script>
 </body>
 </html>
