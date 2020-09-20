@@ -69,7 +69,7 @@ ul.header_list {
 }
 
 .header_list > li {
-	color: #333;
+	color: #eee;
 	vertical-align: middle;
 	display: inline-block;
 	padding: 2px 10px 2px 0;
@@ -81,12 +81,18 @@ ul.header_list {
 	font-size: 16px;
 }
 .header_list > li a {
-  color: #292b2c;
+  color: #c9c9ca;
   font-size: 30px;
 }
 .header_list > li a > span {
-  color: #292b2c;
+  color: #c9c9ca;
   font-size: 14px;
+}
+.header_list > li a:hover {
+  color:rgb(121 180 180 / 1);
+}
+.header_list > li a > span:hover {
+  color: rgb(121 180 180 / 1);
 }
 .header_wrap:not([class*="bg_"]):not([class*="bg-"]) {
   background-color: #fff;
@@ -160,11 +166,11 @@ ul.header_list {
   right: 0;
   bottom: 0;
   top: 0;
-  border: 2px solid #79b4b4;
+  border: 2px solid rgba(255,255,255, 0.5);
   margin: -4px;
 }
 .indicators li {
-  background-color: #79b4b4;
+  background-color: rgba(255,255,255, 0.5);
   border-radius: 100%;
   width: 8px;
   height: 8px;
@@ -210,22 +216,16 @@ ul.header_list {
 	width: 100%;
 }
 .carousel-control-next, .carousel-control-prev {
-	background-color: rgba(0,0,0,0.5);
-	font-size: 18px;
-	height: 50px;
-	opacity: 0;
+  color: rgb(255, 255, 255, 0.5);
+	font-size: 30px;
+  height: 250px;
+	opacity: 1;
 	top: 50%;
 	-moz-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 	width: 50px;
 	transition: all 0.3s ease-in-out;
-}
-.carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover {
-	opacity: 0;
-}
-.carousel:hover .carousel-control-next, .carousel:hover .carousel-control-prev {
-	opacity: 1;
 }
 .carousel-control-next {
 	right: 20px;
@@ -443,40 +443,7 @@ body.active {
 	z-index: -1;
 	width: 100%;
 }
-.carousel-control-next, .carousel-control-prev {
-	background-color: rgba(0,0,0,0.5);
-	font-size: 18px;
-	height: 50px;
-	opacity: 0;
-	top: 50%;
-	-moz-transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
-	width: 50px;
-	transition: all 0.3s ease-in-out;
-}
-.carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover {
-	opacity: 0;
-}
-.carousel:hover .carousel-control-next, .carousel:hover .carousel-control-prev {
-	opacity: 1;
-}
-.carousel-control-next {
-	right: 20px;
-}
-.carousel-control-prev {
-	left: 20px;
-}
 
-.light_arrow .carousel-control-next, .light_arrow .carousel-control-prev {
-	background-color:#fff;
-	box-shadow: 0 0 10px rgba(0,0,0,0.1);
-	color: #000;
-}
-.light_arrow .carousel-control-next:hover, .light_arrow .carousel-control-prev:hover{
-	background-color: #FF324D;
-	color: #fff;
-}
 /**/
 .pos-relative {
   position: relative;
