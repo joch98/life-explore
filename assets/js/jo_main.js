@@ -1,9 +1,7 @@
 $(document).ready(function() {
-  $('[data-toggle="slide-collapse"]').on('click', function() {
-    $navMenuCont = $($(this).data('target'));
-    $navMenuCont.animate({'width':'toggle'}, 350);
-  });
-  $('map').imageMapResize();
+
+  $('map[name="icelandMap"]').imageMapResize();
+  $('map[name="icelandMapMobile"]').imageMapResize();
   $('.btnbox-tabs').tabs();
   $(".tab-selection li").click(function () {
     $(".tab-selection li").removeClass("active");
@@ -14,55 +12,54 @@ $(document).ready(function() {
     } else if ($(this).hasClass("tab-b") === true) {
         $(this).parents(".tabs-article-container").find(".tab-content").removeClass("active");
         $(this).parents(".tabs-article-container").find(".tab-content-b").addClass("active");
-    } else {
+    } else if ($(this).hasClass("tab-c") === true) {
         $(this).parents(".tabs-article-container").find(".tab-content").removeClass("active");
         $(this).parents(".tabs-article-container").find(".tab-content-c").addClass("active");
+    } else if ($(this).hasClass("tab-d") === true) {
+      $(this).parents(".tabs-article-container").find(".tab-content").removeClass("active");
+      $(this).parents(".tabs-article-container").find(".tab-content-d").addClass("active");
+    } else {
+      $(this).parents(".tabs-article-container").find(".tab-content").removeClass("active");
+      $(this).parents(".tabs-article-container").find(".tab-content-e").addClass("active");
     }
   });
-})
-$(document).on('click', '[data-toggle="lightbox"]', function(event) {
-  event.preventDefault();
-  $(this).ekkoLightbox();
-});
-$(document).ready(function() {   
-  var sideslider = $('[data-toggle=collapse-side]');
-  var sel = sideslider.attr('data-target');
-  var sel2 = sideslider.attr('data-target-2');
-  sideslider.click(function(event){
-      $(sel).toggleClass('in');
-      $(sel2).toggleClass('out');
-  });
+
+
   if($(window).width() < 420) {
     $(document).scroll(function() {
       var y = $(this).scrollTop();
       console.log(y)
-      if (y > 1400 && y < 1900) {
+      if (y > 1900 && y < 2100) {
         $('.discover-entry').addClass('mobile-active')
       }  
-      if (y > 1900 && y < 2250) {
+      if (y > 2100 && y < 2450) {
         $('.discover-entry').removeClass('mobile-active')
         $('.discover').addClass('mobile-active')
       }
-      if (y > 2250 && y < 2850) {
+      if (y > 2450 && y < 2950) {
         $('.discover').removeClass('mobile-active')
         $('.energy').addClass('mobile-active')
       }
-      if (y > 2850 && y < 3100) {
+      if (y > 2950 && y < 3400) {
         $('.energy').removeClass('mobile-active')
         $('.relationship-entry').addClass('mobile-active')
       }
-      if (y > 3100 && y < 3500) {
+      if (y > 3400 && y < 3900) {
         $('.relationship-entry').removeClass('mobile-active')
         $('.relationship').addClass('mobile-active')
       }
-      if (y > 3500 && y < 3800) {
+      if (y > 3900 && y < 4200) {
         $('.relationship').removeClass('mobile-active')
         $('.relationship-level').addClass('mobile-active')
       }
-      if (y > 3800 && y < 4200) {
+      if (y > 4200 && y < 4500) {
         $('.relationship-level').removeClass('mobile-active')
         $('.cases').addClass('mobile-active')
       } 
     });
   }
+})
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+  event.preventDefault();
+  $(this).ekkoLightbox();
 });

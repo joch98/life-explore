@@ -1,10 +1,7 @@
 
 
 (function($) {
-	/*===================================*
-	02. BACKGROUND IMAGE JS
-	*===================================*/
-	/*data image src*/
+	/*BACKGROUND IMAGE JS*/
 	$(".background_bg").each(function() {
 		var attr = $(this).attr('data-img-src');
 		if (typeof attr !== typeof undefined && attr !== false) {
@@ -12,9 +9,7 @@
 		}
 	});
 	
-	/*===================================*
-	04. MENU JS
-	*===================================*/
+	/*MENU JS*/
 	//Main navigation scroll spy for shadow
 	$(window).on('scroll', function() {
 		var scroll = $(window).scrollTop();
@@ -112,9 +107,7 @@
 		$("body").append('<div id="header-overlay" class="header-overlay"></div>');
 	});
 	
-	/*===================================*
-	07. SCROLLUP JS
-	*===================================*/
+	/*SCROLLUP JS*/
 	$(window).on('scroll', function() {
 		if ($(this).scrollTop() > 150) {
 			$('.scrollup').fadeIn();
@@ -131,9 +124,7 @@
 		return false;
 	});
 	
-	/*===================================*
-	10. SLIDER JS
-	*===================================*/
+	/*SLIDER JS*/
 	function carousel_slider() {
 		$('.carousel_slider').each( function() {
 			var $carousel = $(this);
