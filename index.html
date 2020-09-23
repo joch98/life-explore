@@ -26,43 +26,6 @@
 <!-- Style CSS -->
 <link rel="stylesheet" href="assets/css/ekko-lightbox.css">
 <link rel="stylesheet" href="assets/css/jo_style.css">
-<style>
-
-/* .iceland-map-mobile,.iceland-map {
-    background: #000;
-    border: 2px solid #000;
-    cursor: pointer;
-} */
-
-    @media (max-width: 992px) {
-    .navbar-collapse {
-        position: fixed;
-        top: 150px;
-        left: 0;
-        width: 75%;
-        height: auto;
-        background: #fff;
-    }
-
-    .navbar-collapse.collapsing {
-        left: -75%;
-        transition: height 0s ease;
-    }
-
-    .navbar-collapse.show {
-        left: 0;
-        transition: left 300ms ease-in-out;
-    }
-
-    .navbar-toggler.collapsed ~ .navbar-collapse {
-        transition: left 500ms ease-in-out;
-    }
-    .nav-fixed .navbar-collapse {
-        top: 38px;
-    }
-}
-
-</style>
 </head>
 
 <body>
@@ -88,8 +51,8 @@
     </div>
     <div class="bottom_header">
     	<div class="container pos-relative">
-            <nav class="navbar"> 
-                <button class="navbar-toggler" type="button" data-toggle="slide-collapse" data-target="#navbarContent" aria-expanded="false"> 
+            <nav class="navbar navbar-expand-lg"> 
+                <button class="navbar-toggler collapsed" type="button" data-toggle="slide-collapse" data-target="#navbarContent" aria-expanded="false"> 
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarContent">
@@ -119,7 +82,7 @@
                             <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">體驗會介紹</a>
                             <div class="dropdown-menu">
                                 <ul> 
-                                    <li><a class="dropdown-item nav-link nav_item" href="">生命探索體驗會</a></li> 
+                                    <li><a class="dropdown-item nav-link nav_item" href="article-1.html">生命探索體驗會</a></li> 
                                     <li><a class="dropdown-item nav-link nav_item" href="">關係工作坊體驗會</a></li> 
                                 </ul>
                             </div>
@@ -155,12 +118,12 @@
 <!-- END HEADER -->
 
 <!-- START SECTION BANNER -->
-<div class="banner_section desktop-only">
-    <div id="DesktopBanner" class="carousel slide carousel-fade">
+<div class="banner_section">
+    <div id="DesktopBanner" class="carousel slide carousel-fade desktop-only">
         <div class="carousel-inner">
-            <div class="carousel-item active"><img src="assets/images/banner/index-banner-1.png"></div>
-            <div class="carousel-item"><img src="assets/images/banner/index-banner-2.png"></div>
-            <div class="carousel-item"><img src="assets/images/banner/index-banner-3.png"></div>
+            <div class="carousel-item active"><a href="#"><img src="assets/images/banner/index-banner-1.png"></a></div>
+            <div class="carousel-item"><a href="#"><img src="assets/images/banner/index-banner-2.png"></a></div>
+            <div class="carousel-item"><a href="banner-article-3.html"><img src="assets/images/banner/index-banner-3.png"></a></div>
         </div>
         <a class="left carousel-control-prev" href="#DesktopBanner" role="button" data-slide="prev">
             <i class="fas fa-chevron-circle-left" aria-hidden="true"></i>
@@ -174,15 +137,11 @@
             <li data-target="#DesktopBanner" data-slide-to="2"></li>
         </ol>
     </div>
-</div>
-<!-- END SECTION BANNER -->
-<!-- START SECTION BANNER -->
-<div class="banner_section mobile-only">
-    <div id="MobileBanner" class="carousel slide carousel-fade">
+    <div id="MobileBanner" class="carousel slide carousel-fade mobile-only">
         <div class="carousel-inner">
-            <div class="carousel-item active"><img src="assets/images/banner/index-banner-1-m.png"></div>
-            <div class="carousel-item"><img src="assets/images/banner/index-banner-2-m.png"></div>
-            <div class="carousel-item"><img src="assets/images/banner/index-banner-3-m.png"></div>
+            <div class="carousel-item active"><a href="#"><img src="assets/images/banner/index-banner-1-m.png"></a></div>
+            <div class="carousel-item"><a href="#"><img src="assets/images/banner/index-banner-2-m.png"></a></div>
+            <div class="carousel-item"><a href="banner-article-3.html"><img src="assets/images/banner/index-banner-3-m.png"></a></div>
         </div>
         <ol class="carousel-indicators  indicators">
             <li data-target="#MobileBanner" data-slide-to="0" class="active"></li>
@@ -191,6 +150,9 @@
         </ol>
     </div>
 </div>
+<!-- END SECTION BANNER -->
+<!-- START SECTION BANNER -->
+
 <!-- END SECTION BANNER -->
 <!-- END MAIN CONTENT -->
 <div class="main_content">
@@ -240,7 +202,7 @@
                 <div>
                     <p>這是一個協助我們拿到「愛自己的力量」深度之旅</p>
                     <p>生存在這個物質世界中，越來越多人渴望身心靈並重發展，大家都希望「關係和諧」，大家都希望「心想事成」，但是，總覺得缺少了那麼一點點，甚至不斷被外在環境衝擊，想要更多的清晰明白感覺卻感覺永無止境。我們多數人的生活都在重複同一個模式而不自知！我們都在童年時做了一些決定影響未來的模式而不自知！</p>
-                    <div class="more-link"><a href="#">more</a></div>
+                    <div class="more-link"><a href="article-1.html">more</a></div>
                 </div>
             </div>
             <div class="col-lg-7 col-sm-12"></div>
@@ -250,7 +212,7 @@
 <div class="section pd_0 iceland-bottom desktop-only">
     <img src="assets/images/iceland-bottom.png" name="icelandMap" usemap="#icelandMap" width="100%">
     <map name="icelandMap">
-        <area shape="rect" coords="1290,550,2000,1150" alt="" href="#" class="iceland-map">
+        <area shape="rect" coords="1290,550,2000,1150" alt="" href="ms-article-1.html" class="iceland-map">
         <div class="iceland-hide aa-block">
             <div>生命探索體驗會</div>
             <div>學員分享<div class="numbers">2</div></div>
@@ -291,7 +253,7 @@
 <div class="section pd_0 mobile-only">
     <img src="assets/images/mobile/iceland-bottom.png" name="icelandMapMobile" usemap="#icelandMapMobile" width="100%">
     <map name="icelandMapMobile">
-        <area shape="rect" coords="1290,550,2000,1150" alt="" href="#" class="iceland-map">
+        <area shape="rect" coords="1290,550,2000,1150" alt="" href="ms-rticle-1.html" class="iceland-map">
         <div class="iceland-hide aa-block">
             <div>生命探索體驗會</div>
             <div>學員分享<div class="numbers">2</div></div>
@@ -342,9 +304,9 @@
             </div>
             <div class="col-lg-4 col-sm-6">	
                 <div class="course-section">
-                    <span class="title"><a href="#">生命探索體驗會</a></span>
-                    <a href="#"><span class="discover-entry content">東郷指暮年聖待設校時贈腕援宣軽滋契隊。文景止光行暮禁朝毎画天闘売現当人対間逮企。無祭物康健徳問総期同理刊百社合志期。功事玲以歳受半陽約業玉温怪収幟将東郷指暮年聖待設校時贈腕援宣軽滋契隊。文景止光行暮禁朝毎画天闘売現当人対間逮企。無祭物康健徳問総期同理刊百社合志期。功事玲以歳受半陽約業玉温怪収幟将</span></a>
-                    <a href="#"><img src="assets/images/course-1.png"></a>
+                    <span class="title"><a href="article-1.html">生命探索體驗會</a></span>
+                    <a href="article-1.html"><span class="discover-entry content">東郷指暮年聖待設校時贈腕援宣軽滋契隊。文景止光行暮禁朝毎画天闘売現当人対間逮企。無祭物康健徳問総期同理刊百社合志期。功事玲以歳受半陽約業玉温怪収幟将東郷指暮年聖待設校時贈腕援宣軽滋契隊。文景止光行暮禁朝毎画天闘売現当人対間逮企。無祭物康健徳問総期同理刊百社合志期。功事玲以歳受半陽約業玉温怪収幟将</span></a>
+                    <a href="article-1.html"><img src="assets/images/course-1.png"></a>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6">	
@@ -403,9 +365,9 @@
             </div>
             <div class="col-lg-4 col-sm-6">	
                 <div class="course-section">
-                    <span class="title"><a href="#">生命探索體驗會</a></span>
-                    <a href="#"><span class="discover-entry content">東郷指暮年聖待設校時贈腕援宣軽滋契隊。文景止光行暮禁朝毎画天闘売現当人対間逮企。無祭物康健徳問総期同理刊百社合志期。功事玲以歳受半陽約業玉温怪収幟将東郷指暮年聖待設校時贈腕援宣軽滋契隊。文景止光行暮禁朝毎画天闘売現当人対間逮企。無祭物康健徳問総期同理刊百社合志期。功事玲以歳受半陽約業玉温怪収幟将</span></a>
-                    <a href="#"><img src="assets/images/course-1.png"></a>
+                    <span class="title"><a href="article-1.html">生命探索體驗會</a></span>
+                    <a href="article-1.html"><span class="discover-entry content">東郷指暮年聖待設校時贈腕援宣軽滋契隊。文景止光行暮禁朝毎画天闘売現当人対間逮企。無祭物康健徳問総期同理刊百社合志期。功事玲以歳受半陽約業玉温怪収幟将東郷指暮年聖待設校時贈腕援宣軽滋契隊。文景止光行暮禁朝毎画天闘売現当人対間逮企。無祭物康健徳問総期同理刊百社合志期。功事玲以歳受半陽約業玉温怪収幟将</span></a>
+                    <a href="article-1.html"><img src="assets/images/course-1.png"></a>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6">	
@@ -476,9 +438,9 @@
             </div>
             <div class="col-lg-4 col-sm-6">	
                 <div class="course-section">
-                    <span class="title"><a href="#">生命探索體驗會</a></span>
-                    <a href="#"><span class="discover-entry content">東郷指暮年聖待設校時贈腕援宣軽滋契隊。文景止光行暮禁朝毎画天闘売現当人対間逮企。無祭物康健徳問総期同理刊百社合志期。功事玲以歳受半陽約業玉温怪収幟将東郷指暮年聖待設校時贈腕援宣軽滋契隊。文景止光行暮禁朝毎画天闘売現当人対間逮企。無祭物康健徳問総期同理刊百社合志期。功事玲以歳受半陽約業玉温怪収幟将</span></a>
-                    <a href="#"><img src="assets/images/course-1.png"></a>
+                    <span class="title"><a href="article-1.html">生命探索體驗會</a></span>
+                    <a href="article-1.html"><span class="discover-entry content">東郷指暮年聖待設校時贈腕援宣軽滋契隊。文景止光行暮禁朝毎画天闘売現当人対間逮企。無祭物康健徳問総期同理刊百社合志期。功事玲以歳受半陽約業玉温怪収幟将東郷指暮年聖待設校時贈腕援宣軽滋契隊。文景止光行暮禁朝毎画天闘売現当人対間逮企。無祭物康健徳問総期同理刊百社合志期。功事玲以歳受半陽約業玉温怪収幟将</span></a>
+                    <a href="article-1.html"><img src="assets/images/course-1.png"></a>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6">	
@@ -555,11 +517,11 @@
         </div>
         <div class="row index-exp">
             <div class="col-lg-4 col-sm-6 ">	
-                <div class="area-section">
+                <a href="article-1.html"><div class="area-section">
                     <span class="title">感情</span>
                     <span class="circle yellow"></span>
                     <img src="assets/images/area-1.png">
-                </div>
+                </div></a>
             </div>
             <div class="col-lg-4 col-sm-6">	
                 <div class="area-section">

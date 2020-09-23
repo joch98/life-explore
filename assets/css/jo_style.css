@@ -35,6 +35,9 @@ button:focus {
 .pt_40 {
   padding-top: 40px;
 }
+.pl_40 {
+  padding-left: 40px
+}
 .f-right {
   float: right;
 }
@@ -47,6 +50,20 @@ button:focus {
 }
 .mobile-only {
   display: none;
+}
+.primary_bg {
+  background: #79b4b4;
+  color: #fff;
+}
+.primary-btn {
+  background: #79b4b4;
+  color: #fff;
+}
+.white-text {
+  color: #fff;
+}
+.mt-20 {
+  margin-top: 20px;
 }
 ul, li, ol {
   margin: 0;
@@ -72,13 +89,14 @@ ul.header_list {
 	color: #eee;
 	vertical-align: middle;
 	display: inline-block;
-	padding: 2px 10px 2px 0;
+	padding: 2px 0 2px 10px;
 }
 .header_list > li > i {
 	font-size: 30px;
 }
 .header_list > li .fa-user {
-	font-size: 16px;
+  font-size: 16px;
+  margin-right: 6px;
 }
 .header_list > li a {
   color: #c9c9ca;
@@ -93,6 +111,9 @@ ul.header_list {
 }
 .header_list > li a > span:hover {
   color: rgb(121 180 180 / 1);
+}
+.header_list > li i {
+	vertical-align: middle;
 }
 .header_wrap:not([class*="bg_"]):not([class*="bg-"]) {
   background-color: #fff;
@@ -364,10 +385,7 @@ ul.header_list {
 	transition: all 0.5s ease-in-out;
 }
 
-.header_list > li i {
-	margin-right: 6px;
-	vertical-align: middle;
-}
+
 
 .header_list > li .dropdown-item:hover {
 	color: #F32B56;
@@ -430,7 +448,7 @@ body.active {
 .search-container {
   position: absolute;
   top: 18px;
-  right: 2%;
+  right: 0.5%;
 }
 .search-container input.search-bar {
   border: 1px solid #79b5b4;
@@ -1077,31 +1095,119 @@ ul.tab-selection li img{
 .scrollup:focus {
 	color:#fff;
 }
+/* 麵包屑 */
+.breadcrumb_bg {
+  background: rgb(121 180 180 / .5);
+}
+.breadcrumb {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: .75rem 0;
+  margin-bottom: 0;
+  list-style: none;
+  border-radius: .25rem;
+  color: #334955;
+  background: none;
+}
+.breadcrumb i {
+  font-size: 14px;
+  line-height: 1.5rem;
+  margin: 0 .8rem;
+}
+.breadcrumb i:first-child {
+  font-size: 14px;
+  line-height: 1.5rem;
+  margin: 0 .8rem 0 0;
+}
+.breadcrumb a {
+  text-decoration: underline;
+  color: #334955;
+}
+.breadcrumb a:hover {
+  color: #ea5513;
+}
+/* 內頁 */
+.section.primary_bg h2.title {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.section.primary_bg .subtitle {
+  font-size: 20px;
+  line-height: 1.8;
+}
+.section.primary_bg .detail {
+  font-size: 16px;
+  line-height: 1.8;
+}
+.section.primary_bg ol.detail {
+  margin-left: 35px;
+}
+span.square:after {
+  content: ' \25C6';
+  font-size: 20px;
+  vertical-align: text-top;
+}
+span.square-middle:after {
+  content: ' \25C6';
+  font-size: 16px;
+  line-height: 20px;
+  vertical-align: text-top;
+  margin-right: 5px;
+}
+span.square-small:after {
+  content: ' \25C6';
+  font-size: 14px;
+  line-height: 16px;
+  vertical-align: text-top;
+  margin-right: 5px;
+}
+.section.primary_bg .content .space {
+  margin-left: 20px;
+}
+.title-line {
+  display: inline-block;
+  position: absolute;
+}
+.title-line:after {
+  content: ' ';
+  width: 65vw;
+  height: 15px;
+  border-bottom: 2px solid #fff;
+  position: absolute;
+  left: -3px;
+  top: 0;
+}
+/*學員分享*/
+.member-sharing-left h2.title {
+ color: #fff;
+ position: absolute;
+ bottom: 0;
+ right: 20px;
+}
 @media (max-width: 992px) {
   .navbar-collapse {
-      position: fixed;
-      top: 147px;
-      left: 0;
-      width: 300px;
-      height: auto;
-      background: #fff;
+    position: fixed;
+    top: 137px;
+    left: 0;
+    width: 75%;
+    height: auto;
+    background: #fff;
   }
-
   .navbar-collapse.collapsing {
-      left: -300px;
-      transition: height 0s ease;
+      left: -75%;
+      transition: left 0s ease;
   }
-
   .navbar-collapse.show {
       left: 0;
       transition: left 300ms ease-in-out;
   }
-
   .navbar-toggler.collapsed ~ .navbar-collapse {
       transition: left 500ms ease-in-out;
   }
   .nav-fixed .navbar-collapse {
-      top: 44px;
+      top: 36px;
   }
 }
 @media screen and (max-width:768px) {
@@ -1110,6 +1216,12 @@ ul.tab-selection li img{
   }
   .mobile-only {
     display: block;
+  }
+  .logo {
+    text-align: center;
+  }
+  ul.header_list {
+    display: none;
   }
   .course-section .content.mobile-active {
     visibility: visible;
@@ -1148,5 +1260,8 @@ ul.tab-selection li img{
   ul.tab-selection {
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+  .title-line:after {
+    width: 45vw;
   }
 }

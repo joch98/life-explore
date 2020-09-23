@@ -14,12 +14,22 @@
 	$(window).on('scroll', function() {
 		var scroll = $(window).scrollTop();
 
-	    if (scroll >= 150) {
-	        $('header.fixed-top').addClass('nav-fixed');
+	    if (scroll >= 113) {
+					$('header.fixed-top').addClass('nav-fixed');
+					$('header.fixed-top').next('div').css('margin-top','180px');
 	    } else {
-	        $('header.fixed-top').removeClass('nav-fixed');
+					$('header.fixed-top').removeClass('nav-fixed');
+					$('header.fixed-top').next('div').css('margin-top','0');
 	    }
-
+			if($(window).width() < 767) {
+				if (scroll >= 113) {
+					$('header.fixed-top').addClass('nav-fixed');
+					$('header.fixed-top').next('div').css('margin-top','130px');
+	    } else {
+					$('header.fixed-top').removeClass('nav-fixed');
+					$('header.fixed-top').next('div').css('margin-top','0');
+	    }
+			}
 	});
 	
 	//Show Hide dropdown-menu Main navigation 
@@ -68,38 +78,6 @@
 		}
 	});
 	
-	$( document ).on('ready', function() {
-		if ($('.header_wrap').hasClass("fixed-top") && !$('.header_wrap').hasClass("transparent_header") && !$('.header_wrap').hasClass("no-sticky")) {
-			$(".header_wrap").before('<div class="header_sticky_bar d-none"></div>');
-		}
-	});
-	
-	$(window).on('scroll', function() {
-		var scroll = $(window).scrollTop();
-
-	    if (scroll >= 150) {
-	        $('.header_sticky_bar').removeClass('d-none');
-			$('header.no-sticky').removeClass('nav-fixed');
-			
-	    } else {
-	        $('.header_sticky_bar').addClass('d-none');
-	    }
-
-	});
-	
-	var setHeight = function() {
-		var height_header = $(".header_wrap").height();
-		$('.header_sticky_bar').css({'height':height_header});
-	};
-	
-	$(window).on('load', function() {
-	  setHeight();
-	});
-	
-	$(window).on('resize', function() {
-	  setHeight();
-	});
-	
 	$('.sidetoggle').on('click', function () {
 		$(this).addClass('open');
 		$('body').addClass('sidetoggle_active');
@@ -109,7 +87,7 @@
 	
 	/*SCROLLUP JS*/
 	$(window).on('scroll', function() {
-		if ($(this).scrollTop() > 150) {
+		if ($(this).scrollTop() > 750) {
 			$('.scrollup').fadeIn();
 		} else {
 			$('.scrollup').fadeOut();

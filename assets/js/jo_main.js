@@ -58,6 +58,13 @@ $(document).ready(function() {
       } 
     });
   }
+
+  //mobile menu
+  $('.navbar-toggler').click(function (){
+    $(this).toggleClass('collapsed');
+    $(this).siblings('.navbar-collapse').toggleClass('show');
+    $(this).attr('aria-expanded','true', 'false')
+  })
 })
 $(document).on('click', '[data-toggle="lightbox"]', function(event) {
   event.preventDefault();
