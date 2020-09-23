@@ -134,14 +134,14 @@ ul.header_list {
 	top: 100% !important;
 	will-change: auto !important;
 }
-.header_dropdown .dropdown-menu[x-placement^="bottom"], .dropdown-menu[x-placement^="left"], .dropdown-menu[x-placement^="right"], .dropdown-menu[x-placement^="top"] {
-	right: 0;
-	left: auto !important;
-}
 .header_dropdown .dropdown-item {
 	padding: 5px 10px;
 	border-bottom: 1px solid #e6e6e6;
 	text-transform: capitalize;
+}
+.navbar {
+  background: #ffffff;
+  padding: 0;
 }
 .navbar .navbar-nav > li > a.active, 
 .navbar .navbar-nav > li:hover > a {
@@ -157,7 +157,9 @@ ul.header_list {
 .navbar .navbar-nav .dropdown-item:hover{
   color: #ea5513;
 }
-
+.bottom_header {
+  background: #ffffff;
+}
 .indicators li::before {
   content: "";
   position: absolute;
@@ -257,9 +259,8 @@ ul.header_list {
 	vertical-align: top;
 	margin: 0;
 }
-
-.navbar {
-	padding: 0;
+.header_wrap {
+	transition: all 0.5s ease 0s;
 }
 .navbar .navbar-nav li {
 	position: relative;
@@ -271,11 +272,10 @@ ul.header_list {
 	border-radius: 0;
 	margin: 0;
 	padding: 0;
-	min-width: 14rem;
+  min-width: 14rem;
+  background-color: rgba(255, 255, 255, .8)
 }
-.navbar-nav .dropdown-menu {
-	background-color: rgba(255, 255, 255, .8)
-}
+
 .dropdown-toggle::after, .dropdown-toggler::after {
 	font-family: "Font Awesome 5 Free";
    content: "\f107";
@@ -352,9 +352,9 @@ ul.header_list {
 } */
 
 .dropdown-menu li a i {
-    font-size: 14px;
-    width: 20px;
-    display: inline-block;
+  font-size: 14px;
+  width: 20px;
+  display: inline-block;
 	vertical-align: middle;
 }
 
@@ -376,27 +376,6 @@ ul.header_list {
 .nav-fixed .top-header,
 .nav-fixed .middle-header {
 	display: none !important;
-}
-.navbar-toggler {
-	float: right;
-	margin: 5px;
-	font-size: 28px;
-	color: #333;
-	transition: all 0.5s ease 0s;
-	border-radius: 0;
-	height: 35px;
-	width: 35px;
-	padding: 0;
-	line-height: 36px;
-	transition: none;
-}
-.navbar-toggler[aria-expanded="true"] span::before {
-    content: "\f129";
-    font-size: 16px;
-}
-.navbar-toggler[aria-expanded="true"] {
-	line-height: 32px;
-	font-size: 20px;
 }
 header .attr-nav + .social_icons {
 	border-left: 1px solid #333;

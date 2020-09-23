@@ -27,11 +27,41 @@
 <link rel="stylesheet" href="assets/css/ekko-lightbox.css">
 <link rel="stylesheet" href="assets/css/jo_style.css">
 <style>
+
 /* .iceland-map-mobile,.iceland-map {
     background: #000;
     border: 2px solid #000;
     cursor: pointer;
 } */
+
+    @media (max-width: 992px) {
+    .navbar-collapse {
+        position: fixed;
+        top: 150px;
+        left: 0;
+        width: 75%;
+        height: auto;
+        background: #fff;
+    }
+
+    .navbar-collapse.collapsing {
+        left: -75%;
+        transition: height 0s ease;
+    }
+
+    .navbar-collapse.show {
+        left: 0;
+        transition: left 300ms ease-in-out;
+    }
+
+    .navbar-toggler.collapsed ~ .navbar-collapse {
+        transition: left 500ms ease-in-out;
+    }
+    .nav-fixed .navbar-collapse {
+        top: 38px;
+    }
+}
+
 </style>
 </head>
 
@@ -57,9 +87,9 @@
         </div>
     </div>
     <div class="bottom_header">
-    	<div class="container">
-            <nav class="navbar navbar-expand-lg"> 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-expanded="false"> 
+    	<div class="container pos-relative">
+            <nav class="navbar"> 
+                <button class="navbar-toggler" type="button" data-toggle="slide-collapse" data-target="#navbarContent" aria-expanded="false"> 
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarContent">
