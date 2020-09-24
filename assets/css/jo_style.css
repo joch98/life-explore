@@ -32,6 +32,9 @@ button {
 button:focus {
 	outline:none;
 }
+.pt_20 {
+  padding-top: 20px;
+}
 .pt_40 {
   padding-top: 40px;
 }
@@ -481,6 +484,10 @@ body.active {
 .section.pb_20 {
   padding-bottom: 20px;
 }
+.section.pb_40 {
+  padding-top: 0;
+  padding-bottom: 40px;
+}
 .section.ptb_20 {
   padding: 20px 0;
 }
@@ -501,8 +508,9 @@ body.active {
 }
 .section h2.title {
   font-family: arial,"Microsoft JhengHei","微軟正黑體",sans-serif !important;
-  color: #7d7d7d;
+  color: #79b4b4;
   font-size: 24px;
+  text-shadow: 1px 1px #d7d7d7;
 }
 .section .title:hover {
   color: #7b9288;
@@ -1195,6 +1203,33 @@ span.square-small:after {
   line-height: 36px;
   float: right;
   margin-right:
+}
+/*課程介紹*/
+.course-page .course-header {
+  position: relative;
+}
+.course-page .course-title {
+  position: absolute;
+  bottom: 40px;
+  color: #fff;
+  text-shadow: 1px 1px #5d5d5d;
+}
+.course-page p {
+  font-size: 17px;
+  line-height: 28px;
+  margin: 15px 0;
+}
+.course-page .course-price {
+  /* display: inline-block; */
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #5d5d5d;
+}
+.course-page .price-cma {
+  font-size: 24px;
+  margin-left: 5px;
+  color: #ea5513;
+  text-shadow: 1px 1px #d1d2d3;
 }
 @media (max-width: 992px) {
   .navbar-collapse {
