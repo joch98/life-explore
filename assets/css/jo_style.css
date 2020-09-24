@@ -223,7 +223,7 @@ ul.header_list {
 .banner_section.slide_wrap .carousel-item {
 	height: 550px;
 }
-.banner_section.slide_wrap .carousel-item a{
+.banner_section .carousel-item a{
   height: 100%;
   display: block;
 }
