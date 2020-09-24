@@ -1,0 +1,560 @@
+@media (min-width: 320px) and (max-width: 659px){
+  .desktop-menu {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+    margin-top: 240px;
+  }
+  .desktop-img {
+    display: none;
+  }
+  .mobile-img {
+    display: block;
+  }
+  .btn {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+  .icon.small {
+    width: 15px;
+    height: 15px;
+  }
+  .icon.large {
+    width: 30px;
+    height: 30px;
+  }
+  .icon-flower {
+    width: 12px;
+    height: 12px;
+  }
+  .user-bar ul, .menu-list {
+    display: none;
+  }
+  .mobile-user-hamburger {
+    display: block;
+  }
+  .logo h1 img {
+    width: 200px;
+    margin-top: -40px;
+  }
+  .slogan {
+    margin-top: 10px;
+  }
+  .slogan .slogan-img {
+    width: 300px;
+  }
+  .eagle {
+    max-width: 140px;
+    top: 0;
+    right: 10px;
+  }
+  .eagle-course {
+    max-width: 140px;
+    top: 0;
+    right: 10px;
+  }
+  .container .title {
+    height: 35px;
+  }
+  .bg-flower-r1 {
+    height: 100px;
+    width: 60px;
+    top: -30px;
+    right: 0;
+  }
+  .container-video {
+    height: 350px;
+  }
+  .container-video-frame {
+    width: 320px;
+    height: 200px;
+    margin-top: 20px;
+  }
+  .container-video-frame-fox {
+    height: 80px;
+    width: 100px;
+    bottom: -55px;
+    right: 0;
+  }
+  .container-video-style {
+    width: 300px;
+    height: 170px;
+    border-radius: 30px;
+    border: 5px solid #fff;
+    margin-top: 9px;
+  }
+  .container-video-style video {
+    width: 300px;
+    height: 170px;
+  }
+  .recommend {
+    height: 1080px;
+    padding-top: 10px;
+  }
+  .recommend-course {
+    justify-content: normal;
+    flex-direction: column;
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .recommend-course .chart {
+    display: block;
+    width: 60vw;
+    margin: 0 auto;
+  }
+  .video video {
+    width: 80vw;
+    height: 190px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .recommend-course .recommend-detail {
+    width: 100%;
+  }
+  .recommend-detail .title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .recommend-detail-list {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .recommend-detail-list li {
+    line-height: 24px;
+    margin-bottom: 5px;
+  }
+  .recommend-course-teacher {
+    display: block;
+  }
+  .recommend-course-teacher img {
+    width: 100px;
+  }
+  .recommend-about-course {
+    width: 100%;
+  }
+  .recommend-about-course p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .course {
+    height: 450px;
+    background-size: contain;
+  }
+  .bg-flower-r2 {
+    height: 100px;
+    width: 60px;
+    top: -30px;
+    right: 0;
+  }
+  .course .title {
+    margin-top: 30px;
+  }
+  .course-list {
+    margin-top: 20px;
+  }
+  .teachers {
+    background-color: #86dbef;
+    height: 600px;
+    padding-top: 30px;
+    background-size: contain;
+  }
+  .teacher-list {
+    width: 100vw;
+  }
+  .teacher-img {
+    width: 110px;
+    height: 110px;
+    left: 8px;
+  }
+  .teacher-profile-name {
+    height: 100px;
+  }
+  .teacher-name, .teacher-words {
+    font-size: 20px;
+    right: -30px;
+    top: 30px;
+    line-height: 1.8;
+  }
+  .teacher-intro {
+    height: 150px;
+  }
+  .teacher-intro .intro {
+    top: 30px;
+    right: 22px;
+  }
+  .teacher-intro .intro p {
+    font-size: 14px;
+    height: 80%;
+  }
+  .teacher-exp {
+    height: 180px;
+  }
+  .teacher-exp .exp {
+    font-size: 14px;
+    line-height: 1.5;
+    top: 40px;
+    right: 20px;
+  }
+  .commends {
+    height: 750px;
+    padding-top: 30px;
+  }
+  .commends-list {
+    width: 95%;
+  }
+  .commends-list-li {
+    background-image: url(../img/frame4-m.png);
+    background-size: 100% 100%;
+    height: 250px;
+    margin-bottom: 10px;
+  }
+  .user-img {
+    width: 100px;
+    height: 100px;
+    left: 15px;
+    top: 30px;
+  }
+  .commend {
+    right: 8%;
+    width: 58%;
+  }
+  .commend p {
+    height: 170px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  footer {
+    height: 450px;
+    background-color: #c63e21;
+    background-size: contain;
+  }
+  .footer-container {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .footer-logo-img {
+    width: 200px;
+    margin-right: 0px;
+  }
+  .footer-logo .title {
+    margin-top: 30px;
+    font-size: 18px;
+    height: 70px;
+  }
+  .title > .text-large {
+    font-size: 28px;
+  }
+  .footer-logo .title span {
+    display: block;
+  }
+  .footer-list {
+    flex-direction: column;
+    width: 80vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .footer-list li {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .slick-prev {
+    left: 0;
+  }
+  .slick-next {
+    right: 0;
+  }
+}
+@media (min-width: 380px) and (max-width: 420px){
+  .teacher-img {
+    width: 120px;
+    height: 120px;
+    left: 8px;
+  }
+  .teacher-profile-name {
+    height: 130px;
+  }
+  .teacher-name, .teacher-words {
+    font-size: 20px;
+    right: -30px;
+    top: 36px;
+    line-height: 1.8;
+  }
+  .teacher-intro {
+    height: 153px;
+  }
+  
+}
+@media (min-width: 660px) and (max-width: 979px) {
+  .user-bar ul, .menu-list {
+    display: none;
+  }
+  .mobile-user-hamburger {
+    display: block;  
+  }
+  .logo h1 img {
+    width: 200px;
+    margin-top: -60px;
+  }
+  .slogan {
+    margin-top: 10px;
+  }
+  .slogan .slogan-img {
+    width: 350px;
+  }
+  .eagle {
+    max-width: 140px;
+    top: -30px;
+    right: 60px;
+  }
+  .eagle-course {
+    max-width: 140px;
+    top: -50px;
+    right: 10px;
+  }
+  .bg-flower-r1 {
+    height: 150px;
+    width: 90px;
+    top: -40px;
+    right: 0;
+  }
+  .container-video {
+    height: 500px;
+  }
+  .container-video-frame {
+    width: 500px;
+    margin-top: 30px;
+  }
+  .container-video-frame-fox {
+    height: 120px;
+    width: 100px;
+    bottom: 300px;
+    right: -100px;
+  }
+  .container-video-style {
+    width: 470px;
+    height: 265px;
+  }
+  .container-video-style video {
+    width: 450px;
+    height: 255px;
+  }
+  .recommend-course {
+    width: 95vw;
+  }
+  .recommend-course .chart {
+    display: none;
+  }
+  .recommend-course .recommend-detail {
+    width: 30%;
+  }
+  .recommend-detail .title {
+    font-size: 24px;
+  }
+  .recommend-detail-list {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .recommend-course-teacher {
+    width: 95vw;
+  }
+  .course {
+    background-size: contain;
+  }
+  .bg-flower-r2 {
+    background-size: contain;
+    height: 200px;
+    width: 80px;
+    position: absolute;
+    top: -40px;
+    right: 0;
+  }
+  .teachers {
+    background-color: #86dbef;
+    background-size: contain;
+  }
+  .teacher-list {
+    width: 80%;
+  }
+  .teacher-img {
+    left: 20px;
+  }
+  .teacher-intro {
+    height: 250px;
+  }
+  .teacher-exp {
+    height: 280px;
+  }
+  .commends {
+    height: 700px;
+  }
+  .commends-list-li {
+    background-size: 100% 100%;
+  }
+  .user-img {
+    width: 100px;
+    height: 100px;
+    left: 30px;
+    top: 35px;
+  }
+  .commend {
+    right: 5%;
+    width: 65%;
+  }
+  footer {
+    height: 450px;
+    background-size: contain;
+    background-color: #c63e21;
+  }
+  .footer-container {
+    font-size: 16px;
+  }
+}
+@media (min-width: 660px) and (max-width: 740px) {
+  .container-video-frame-fox {
+    bottom: 220px;
+    right: -70px;
+  }
+  .video video {
+    width: 420px;
+    height: 240px;
+  }
+  .teacher-img {
+    width: 170px;
+    height: 170px;
+    left: 10px;
+  }
+  .teacher-name {
+    top: 30px;
+  }
+}
+@media (min-width: 980px) and (max-width: 1400px) {
+  .btn {
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+  .icon.small {
+    height: 16px;
+    width: 16px;
+  }
+  .user-bar ul {
+    padding: 0 10px;
+    margin: 20px;
+    width: 390px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+  }
+  .logo h1 img{
+    width: 250px;
+  }
+  .slogan {
+    margin-top: 20px;
+  }
+  .slogan .slogan-img {
+    width: 400px;
+  }
+  .eagle {
+    max-width: 160px;
+    top: -30px;
+    right: 30px;
+  }
+  .container-video {
+    height: 700px;
+  }
+  .container-video-frame {
+    width: 800px;
+  }
+  .container-video-frame-fox {
+    height: 150px;
+    width: 120px;
+    bottom: 120px;
+    right: -100px;
+  }
+  .container-video-style {
+    width: 760px;
+    height: 420px;
+  }
+  .container-video-style video {
+    width: 740px;
+    height: 400px;
+  }
+  .video video {
+    width: 420px;
+    height: 240px;
+  }
+  .course-list {
+    padding: 0;
+  }
+  .course-list .course-list-li {
+    margin: 10px 20px;
+  }
+  .course-detail-list li {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 5px;
+  }
+  .teachers {
+    height: 600px;
+  }
+  .frame {
+    height: 170px;
+  }
+  .teacher-list {
+    width: 800px;
+    margin-top: 20px;
+  }
+  .teacher-profile-name {
+    height: 100px;
+  }
+  .teacher-img {
+    width: 120px;
+    height: 120px;
+  }
+  .teacher-name {
+    font-size: 24px;
+    right: -40px;
+    top: 20px;
+  }
+  .teacher-words {
+    font-size: 24px;
+  }
+  .teacher-intro .intro {
+    right: 20px;
+    top: 30px;
+  }
+  .teacher-intro .intro p {
+    font-size: 16px;
+    height: 60%;
+  }
+  .teacher-exp .exp {
+    font-size: 16px;
+    top: 10px;
+    right: 20px;
+    line-height: 24px;
+    height: 70%;
+  }
+  .commends-list-li {
+    height: 130px;
+  }
+  .user-img {
+    width: 100px;
+    height: 100px;
+    left: 12%;
+    top: 20px;
+  }
+  .commends {
+    height: 550px;
+  }
+  .commend {
+    top: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 63%;
+    right: 13%;
+  }
+  .commend p {
+    height: 70px;
+  }
+}
