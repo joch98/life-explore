@@ -223,6 +223,10 @@ ul.header_list {
 .banner_section.slide_wrap .carousel-item {
 	height: 550px;
 }
+.banner_section.slide_wrap .carousel-item a{
+  height: 100%;
+  display: block;
+}
 .banner_section .banner_slide_content {
 	left: 0;
 	position: absolute;
@@ -1190,7 +1194,7 @@ span.square-small:after {
   font-size: 18px;
   line-height: 36px;
   float: right;
-  margin-right: 10px;
+  margin-right:
 }
 @media (max-width: 992px) {
   .navbar-collapse {
