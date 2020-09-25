@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Meta -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+<!-- SITE TITLE -->
+<title>Explore-Life 文章列表頁</title>
+<!-- Favicon Icon -->
+<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+<!-- Latest Bootstrap min CSS -->
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+<!-- Icon Font CSS -->
+<link rel="stylesheet" href="assets/css/all.min.css">
+<!--- owl carousel CSS-->
+<link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.min.css">
+<link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.css">
+<link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.default.min.css">
+<!-- Slick CSS -->
+<link rel="stylesheet" href="assets/css/slick.css">
+<link rel="stylesheet" href="assets/css/slick-theme.css">
+<!-- Style CSS -->
+<link rel="stylesheet" href="assets/css/ekko-lightbox.css">
+<link rel="stylesheet" href="assets/css/jo_style.css">
+<style>
+.select-search-bar {
+    margin-top: 40px;
+}
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  font-family: Arial;
+  width: 180px;
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid #45a0bb;
+  font-family: Arial, Helvetica, "Microsoft JhengHei","微軟正黑體",sans-serif;
+  font-size: 14px;
+  margin-right: 10px;
+  padding: unset;
+}
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #45a0bb transparent transparent transparent;
+}
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #45a0bb transparent;
+  top: 7px;
+}
+/*style the items (options), including the selected item:*/
+.select-selected {
+  color: #000;
+  padding: 10px 16px;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 5px;
+  background: #fff;
+  height: 33px;
+}
+.select-items div {
+  color: #000;
+  /* border: 1px solid #45a0bb; */
+  cursor: pointer;
+  user-select: none;
+  border-bottom: 0;
+  padding: 15px;
+}
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #fff;
+  top: 98%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  border-top: 0;
+  border-color: rgba(238, 238, 238, .5);
+  box-shadow: 1px 0px 5px rgba(238, 238, 238, .8);
+  -webkit-box-shadow: 1px 0px 5px rgba(238, 238, 238, .8);
+  -moz-box-shadow: 1px 0px 5px rgba(238, 238, 238, .8);
+}
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+.select-items div:hover, .same-as-selected {
+  background-color: #ebf7ff;
+}
+.custom-search-input {
+  border-radius: 5px;
+  border: 1px solid #45a0bb;
+  padding: 7px 16px;
+  height: 36px;
+  margin-right: 10px;
+  width: 400px;
+}
+.custom-search-btn {
+  border-radius: 5px;
+  background: #45a0bb;
+  color: #fff;
+  padding: 0 16px;
+  height: 36px;
+  width: 100px;
+  vertical-align: bottom;
+}
+.custom-search-btn i {
+  margin-right: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- START HEADER -->
+<header class="header_wrap fixed-top header_with_topbar">
+	<div class="top-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-12">
+                    <div class="logo">
+                        <a href="index.html"><img src="assets/images/logo.png" alt="生命探索" class="logo-img"></a>
+                        <div class="f-right">
+                            <ul class="header_list">
+                                <li><a href="login.html"><i class="fas fa-user"></i><span>註冊/登入</span></a></li>
+                                <li><a href="login.html"><i class="fab fa-facebook-square"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom_header">
+    	<div class="container pos-relative">
+            <nav class="navbar navbar-expand-lg"> 
+                <button class="navbar-toggler collapsed" type="button" data-toggle="slide-collapse" data-target="#navbarContent" aria-expanded="false"> 
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav">
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">關於生命探索</a>
+                            <div class="dropdown-menu">
+                                <ul> 
+                                    <li><a class="dropdown-item nav-link nav_item" href="#">我們的故事</a></li>
+                                    <li><a class="dropdown-item nav-link nav_item" href="#">關於筠榕</a></li>
+                                </ul>
+                            </div>   
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">課程介紹</a>
+                            <div class="dropdown-menu">
+                                <ul> 
+                                    <li><a class="dropdown-item nav-link nav_item" href="">生命探索</a></li> 
+                                    <li><a class="dropdown-item nav-link nav_item" href="">關係工作坊</a></li> 
+                                    <li><a class="dropdown-item nav-link nav_item" href="">關係進階工作坊</a></li> 
+                                    <li><a class="dropdown-item nav-link nav_item" href="">能量工作坊</a></li> 
+                                    <li><a class="dropdown-item nav-link nav_item" href="">個案諮商</a></li> 
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">體驗會介紹</a>
+                            <div class="dropdown-menu">
+                                <ul> 
+                                    <li><a class="dropdown-item nav-link nav_item" href="">生命探索體驗會</a></li> 
+                                    <li><a class="dropdown-item nav-link nav_item" href="">關係工作坊體驗會</a></li> 
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">學員分享</a>
+                            <div class="dropdown-menu">
+                                <ul> 
+                                    <li><a class="dropdown-item nav-link nav_item" href="">生命探索體驗會</a></li> 
+                                    <li><a class="dropdown-item nav-link nav_item" href="">生命探索</a></li> 
+                                    <li><a class="dropdown-item nav-link nav_item" href="">關係工作坊體驗會</a></li> 
+                                    <li><a class="dropdown-item nav-link nav_item" href="">關係工作坊</a></li> 
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="nav-link nav_item" href="#">聯絡我們</a>
+                        </li>
+                    </ul>
+                    <div class="search-container">
+                        <input type="text" class="search-bar">
+                        <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<!-- END HEADER -->
+
+<!-- START SECTION BANNER -->
+<div class="banner_section">
+    
+</div>
+<!-- END SECTION BANNER -->
+<!-- START BREADCRUMB SECTION -->
+<div class="section pd_0 breadcrumb_bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb">
+                    <a href="index.html"><i class="fas fa-home"></i>首頁</a>
+                    <i class="fas fa-angle-double-right"></i>
+                    <a href="#">文章分享列表</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END BREADCRUMB SECTION -->
+<!-- END MAIN CONTENT -->
+<div class="main_content">
+
+<!-- START SECTION -->
+<div class="section pb_40 course-page">
+    <div class="course-header">
+        <img src="assets/images/pages/article-img-header-2@2x.png">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
+                    <h2 class="course-title">文章分享列表</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-sm-12">
+                <div class="select-search-bar">
+                    <div class="custom-select">
+                      <select>
+                        <option>全部</option>
+                        <option>個人</option>
+                        <option>家庭</option>
+                        <option>親密關係</option>
+                      </select>
+                    </div>
+                    <button class="custom-search-btn"><i class="fas fa-search"></i>搜尋</button>
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-4">
+                <a href="#"><img src="assets/images/pages/article-img-header-3@2x.png"></a>
+                <h2 class="title">測試文章名稱測試文章名稱測試文章名稱測試文章名稱</h2>
+                <div class="short-content">
+                    生存在這個物質世界中，越來越多人渴望身心靈並重發展，大家都希望「關係和諧」，大家都希望「心想事成」，但是，總覺得缺少了那麼一點點，甚至不斷被外在環境衝擊，想要更多的清晰明白感覺卻感覺永無止境。我們多數人的生活都在重複同一個模式而不自知！我們都在童年時做了一些決定影響未來的模式而不自知
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-4">
+                <h2 class="title pt_40">這是一個協助我們拿到「愛自己的力量」深度之旅</h2>
+                <div>
+                    <p>生存在這個物質世界中，越來越多人渴望身心靈並重發展，大家都希望「關係和諧」，大家都希望「心想事成」，但是，總覺得缺少了那麼一點點，甚至不斷被外在環境衝擊，想要更多的清晰明白感覺卻感覺永無止境。我們多數人的生活都在重複同一個模式而不自知！我們都在童年時做了一些決定影響未來的模式而不自知！</p>
+                    <p>這個體驗課程，將提供給您：</p>
+                    <p>一、檢視自己內在的想法，暸解自己現在的位置。</p>
+                    <p>二、介紹我們要去的地方，那個原本我們就圓滿具足的地方。</p>
+                    <p>三、根據暸解現在的位置，而做一個新的決定</p>
+                </div>
+                <div class="course-price">
+                    體驗會費用: NT$<span class="price-cma">500</span>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-4">
+                <h2 class="title pt_40">這是一個協助我們拿到「愛自己的力量」深度之旅</h2>
+                <div>
+                    <p>生存在這個物質世界中，越來越多人渴望身心靈並重發展，大家都希望「關係和諧」，大家都希望「心想事成」，但是，總覺得缺少了那麼一點點，甚至不斷被外在環境衝擊，想要更多的清晰明白感覺卻感覺永無止境。我們多數人的生活都在重複同一個模式而不自知！我們都在童年時做了一些決定影響未來的模式而不自知！</p>
+                    <p>這個體驗課程，將提供給您：</p>
+                    <p>一、檢視自己內在的想法，暸解自己現在的位置。</p>
+                    <p>二、介紹我們要去的地方，那個原本我們就圓滿具足的地方。</p>
+                    <p>三、根據暸解現在的位置，而做一個新的決定</p>
+                </div>
+                <div class="course-price">
+                    體驗會費用: NT$<span class="price-cma">500</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- START SECTION -->
+
+<!-- START SECTION -->
+<div class="section ptb_20 primary_bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>這部分要不要放呢?推廣體驗會?</h2>
+                <h2 class="title">2020體驗會日期<span class="square"></span><span class="title-line"></span></h2>
+                <div class="row">
+                    <div class="col-lg-3 col-sm-12">
+                        <div class="subtitle"><span class="square-middle"></span>2020/10/18(日)</div>
+                        <div class="subtitle"><span class="square-middle"></span>2020/10/18(日)</div>
+                        <div class="subtitle"><span class="square-middle"></span>2020/10/18(日)</div>
+                        <div class="subtitle"><span class="square-middle"></span>2020/10/18(日)</div>
+                    </div>
+                    <div class="col-lg-9 col-sm-12">
+                        <div class="detail">
+                            <span class="square-small"></span>
+                            時間：13:30~17:30 (14:00開始冥想)
+                        </div>
+                        <div class="detail">
+                            <span class="square-small"></span>
+                            上課地點：台北市中原街48號3樓
+                        </div>
+                        <div class="detail">
+                            <span class="square-small"></span>
+                            費用：500元 (現場繳費)
+                        </div>
+                        <div class="detail">
+                            <span class="square-small"></span>
+                            交通資訊：
+                            <ol class="detail">
+                                <li>捷運淡水線：雙連捷運站一號出口，轉搭公車518「中山老人住宅站」下車。</li>
+                                <li>捷運蘆洲線：行天宮站一號出口右轉步行約10分鐘。</li>
+                                <li>開車者：可以停在新生南北路高架橋下公有停車場。</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</div>
+<!-- END MAIN CONTENT -->
+
+<!-- START FOOTER -->
+<footer class="">
+<!-- START SECTION -->
+<div class="section pd_40 contactus_bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-sm-12">
+                <img src="assets/images/footer-1@3x.png">
+                <ul class="info-list">
+                    <li class="info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>台北市中山區中原街48號3樓</span>
+                    </li>
+                    <li class="info">
+                        <i class="fas fa-user"></i>
+                        <span>
+                            <span>王藝樺</span>
+                            <span>0938-118-192</span>
+                        </span>
+                    </li>
+                    <li class="info">
+                        <i class="fas fa-user"></i>
+                        <span>
+                            <span>王藝樺</span>
+                            <span>0938-118-192</span>
+                        </span>
+                    </li>
+                    <li class="info">
+                        <i class="fas fa-user"></i>
+                        <span>
+                            <span>王藝樺</span>
+                            <span>0938-118-192</span>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <img src="assets/images/footer-2@2x.png">
+                <ul class="info-list">
+                    <li class="info">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <span>info.dicoverlife@gmail.com</span>
+                    </li>
+                    <li class="info">
+                        <i class="fab fa-facebook-square"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END SECTION -->
+</footer>
+<!-- END FOOTER -->
+
+<a href="#" class="scrollup" style="display: none;"><i class="fas fa-angle-up"></i></a> 
+
+<!-- Latest jQuery --> 
+<script src="assets/js/jquery-3.5.1.min.js"></script> 
+<!-- jQuery UI-->
+<script src="assets/js/jquery-ui.js"></script> 
+<!-- Latest compiled and minified Bootstrap --> 
+<script src="assets/bootstrap/js/bootstrap.min.js"></script> 
+<!-- owl-carousel min js  --> 
+<script src="assets/owlcarousel/js/owl.carousel.min.js"></script> 
+<!-- slick js -->
+<script src="assets/js/slick.min.js"></script>
+<!-- imageMapResizer js -->
+<script src="assets/js/imageMapResizer.js"></script>
+<!-- scripts js --> 
+<script src="assets/js/scripts.js"></script>
+<script src="assets/js/ekko-lightbox.min.js"></script>
+<script src="assets/js/jo_main.js"></script>
+<script>    
+    //select option樣式
+    var x, i, j, l, ll, selElmnt, a, b, c;
+    /*look for any elements with the class "custom-select":*/
+    x = document.getElementsByClassName("custom-select");
+    l = x.length;
+    for (i = 0; i < l; i++) {
+     selElmnt = x[i].getElementsByTagName("select")[0];
+     ll = selElmnt.length;
+     /*for each element, create a new DIV that will act as the selected item:*/
+     a = document.createElement("DIV");
+     a.setAttribute("class", "select-selected");
+     a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+     x[i].appendChild(a);
+     /*for each element, create a new DIV that will contain the option list:*/
+     b = document.createElement("DIV");
+     b.setAttribute("class", "select-items select-hide");
+     for (j = 1; j < ll; j++) {
+      /*for each option in the original select element,
+            create a new DIV that will act as an option item:*/
+      c = document.createElement("DIV");
+      c.innerHTML = selElmnt.options[j].innerHTML;
+      c.addEventListener("click", function (e) {
+       /*when an item is clicked, update the original select box,
+                and the selected item:*/
+       var y, i, k, s, h, sl, yl;
+       s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+       sl = s.length;
+       h = this.parentNode.previousSibling;
+       for (i = 0; i < sl; i++) {
+        if (s.options[i].innerHTML == this.innerHTML) {
+         s.selectedIndex = i;
+         h.innerHTML = this.innerHTML;
+         y = this.parentNode.getElementsByClassName("same-as-selected");
+         yl = y.length;
+         for (k = 0; k < yl; k++) {
+          y[k].removeAttribute("class");
+         }
+         this.setAttribute("class", "same-as-selected");
+         break;
+        }
+       }
+       h.click();
+      });
+      b.appendChild(c);
+     }
+     x[i].appendChild(b);
+     a.addEventListener("click", function (e) {
+      /*when the select box is clicked, close any other select boxes,
+              and open/close the current select box:*/
+      e.stopPropagation();
+      closeAllSelect(this);
+      this.nextSibling.classList.toggle("select-hide");
+      this.classList.toggle("select-arrow-active");
+     });
+    }
+    function closeAllSelect(elmnt) {
+     /*a function that will close all select boxes in the document,
+          except the current select box:*/
+     var x,
+      y,
+      i,
+      xl,
+      yl,
+      arrNo = [];
+     x = document.getElementsByClassName("select-items");
+     y = document.getElementsByClassName("select-selected");
+     xl = x.length;
+     yl = y.length;
+     for (i = 0; i < yl; i++) {
+      if (elmnt == y[i]) {
+       arrNo.push(i);
+      } else {
+       y[i].classList.remove("select-arrow-active");
+      }
+     }
+     for (i = 0; i < xl; i++) {
+      if (arrNo.indexOf(i)) {
+       x[i].classList.add("select-hide");
+      }
+     }
+    }
+    /*if the user clicks anywhere outside the select box,
+        then close all select boxes:*/
+    document.addEventListener("click", closeAllSelect);
+</script>
+</body>
+</html>

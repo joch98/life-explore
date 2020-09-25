@@ -1231,6 +1231,10 @@ span.square-small:after {
   color: #ea5513;
   text-shadow: 1px 1px #d1d2d3;
 }
+/*文章列表*/
+.list-group {
+  
+}
 @media (max-width: 992px) {
   .navbar-collapse {
     position: fixed;
