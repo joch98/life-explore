@@ -93,7 +93,15 @@
 			$('.scrollup').fadeOut();
 		}
 	});
-	
+	$(window).on('scroll', function() {
+		if ($(this).scrollTop() > 650) {
+			$('.fixed-img').fadeIn();
+			$('.discount-icon').fadeIn();
+		} else {
+			$('.fixed-img').fadeOut();
+			$('.discount-icon').fadeOut();
+		}
+	});
 	$(".scrollup").on('click', function (e) {
 		e.preventDefault();
 		$('html, body').animate({
