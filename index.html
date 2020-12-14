@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hans-TW">
 <head>
 <!-- Meta -->
 <meta charset="utf-8">
@@ -9,7 +9,7 @@
 <meta name="keywords" content="">
 
 <!-- SITE TITLE -->
-<title>Explore-Life</title>
+<title>Explore-Life 首頁</title>
 <!-- Favicon Icon -->
 <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
 <!-- Latest Bootstrap min CSS -->
@@ -40,7 +40,7 @@
                         <img src="assets/images/logo.png" alt="生命探索" class="logo-img">
                         <div class="f-right">
                             <ul class="header_list">
-                                <li><a href="login.html"><i class="fas fa-user"></i><span>註冊/登入</span></a></li>
+                                <li><a href="#loginBox" class="trigger-btn" data-toggle="modal"><i class="fas fa-user"></i><span>註冊/登入</span></a></li>
                                 <li><a href="login.html"><i class="fab fa-facebook-square"></i></a></li>
                             </ul>
                         </div>
@@ -754,6 +754,41 @@
                     </li>
                 </ul>
             </div>
+        </div>
+    </div>
+</div>
+<div id="loginBox" class="modal fade show" aria-modal="true" style="display: none;">
+    <div class="modal-dialog modal-login">
+        <div class="modal-content">
+            <div class="modal-header">				
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body">
+                <img src="assets/images/pages/logo-white@2x.png">
+                <form>
+                    <div class="form-group">
+                        <i class="fa fa-user"></i>
+                        <input type="text" class="form-control" placeholder="e-mail帳號" required="required">
+                    </div>
+                    <div class="form-group">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" class="form-control" placeholder="密碼" required="required">					
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary btn-block btn-lg" value="登入">
+                    </div>
+                </form>
+                <div class="modal-tab-container">
+                    <a href="#" class="modal-tab">註冊帳號</a>
+                    <a href="#" class="modal-tab">忘記密碼</a>
+                </div>
+                <div class="modal-social-media">
+                    <a href="#" class="social-media"><i class="fab fa-facebook-square"></i>使用Facebook登入</a>
+                    <a href="#" class="social-media"><i class="fab fa-google"></i>使用Google登入</a>
+                    <a href="#" class="social-media"><i class="fab fa-line"></i>使用Line登入</a>
+                </div>
+            </div>
+            
         </div>
     </div>
 </div>

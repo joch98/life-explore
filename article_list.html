@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hans-TW">
 <head>
 <!-- Meta -->
 <meta charset="utf-8">
@@ -29,6 +29,7 @@
 <style>
 .select-search-bar {
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 /*the container must be positioned relative:*/
 .custom-select {
@@ -37,7 +38,7 @@
   width: 180px;
   display: inline-block;
   border-radius: 5px;
-  border: 1px solid #45a0bb;
+  border: 1px solid #79b5b4;
   font-family: Arial, Helvetica, "Microsoft JhengHei","微軟正黑體",sans-serif;
   font-size: 14px;
   margin-right: 10px;
@@ -56,17 +57,17 @@
   width: 0;
   height: 0;
   border: 6px solid transparent;
-  border-color: #45a0bb transparent transparent transparent;
+  border-color: #79b5b4 transparent transparent transparent;
 }
 /*point the arrow upwards when the select box is open (active):*/
 .select-selected.select-arrow-active:after {
-  border-color: transparent transparent #45a0bb transparent;
+  border-color: transparent transparent #79b5b4 transparent;
   top: 7px;
 }
 /*style the items (options), including the selected item:*/
 .select-selected {
   color: #000;
-  padding: 10px 16px;
+  padding: 6px 16px;
   cursor: pointer;
   user-select: none;
   border-radius: 5px;
@@ -102,11 +103,11 @@
   display: none;
 }
 .select-items div:hover, .same-as-selected {
-  background-color: #ebf7ff;
+  background-color: #acdcdc59;
 }
 .custom-search-input {
   border-radius: 5px;
-  border: 1px solid #45a0bb;
+  border: 1px solid #79b5b4;
   padding: 7px 16px;
   height: 36px;
   margin-right: 10px;
@@ -114,7 +115,7 @@
 }
 .custom-search-btn {
   border-radius: 5px;
-  background: #45a0bb;
+  background: #79b5b4;
   color: #fff;
   padding: 0 16px;
   height: 36px;
@@ -123,6 +124,34 @@
 }
 .custom-search-btn i {
   margin-right: 10px;
+}
+
+.article_list .col-lg-4.col-sm-4{
+    margin-bottom: 40px;
+}
+.article_list.section h2.title {
+    color: #79b4b4;
+    font-size: 20px;
+    text-shadow: none;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.article_list .short-content {
+    color: #888;
+    font-size: 14px;
+    line-height: 24px;
+    height: 172px;
+    overflow: hidden;
+}
+.article_list .more-link {
+    width: 100px;
+}
+.page-link {
+    color: #79b5b4;
+}
+.page-item.active .page-link {
+    background-color: #79b5b4;
+    border-color: #79b5b4;
 }
 </style>
 </head>
@@ -236,8 +265,8 @@
 <div class="main_content">
 
 <!-- START SECTION -->
-<div class="section pb_40 course-page">
-    <div class="course-header">
+<div class="section pb_40 article_list">
+    <!-- <div class="course-header">
         <img src="assets/images/pages/article-img-header-2@2x.png">
         <div class="container">
             <div class="row">
@@ -246,7 +275,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-sm-12">
@@ -265,88 +294,77 @@
         </div>
         <div class="row">
             <div class="col-lg-4 col-sm-4">
-                <a href="#"><img src="assets/images/pages/article-img-header-3@2x.png"></a>
+                <a href="#"><img src="assets/images/pages/img-s1@2x.png"></a>
                 <h2 class="title">測試文章名稱測試文章名稱測試文章名稱測試文章名稱</h2>
                 <div class="short-content">
                     生存在這個物質世界中，越來越多人渴望身心靈並重發展，大家都希望「關係和諧」，大家都希望「心想事成」，但是，總覺得缺少了那麼一點點，甚至不斷被外在環境衝擊，想要更多的清晰明白感覺卻感覺永無止境。我們多數人的生活都在重複同一個模式而不自知！我們都在童年時做了一些決定影響未來的模式而不自知
                 </div>
+                <div class="more-link"><a href="#">more</a></div>
             </div>
             <div class="col-lg-4 col-sm-4">
-                <h2 class="title pt_40">這是一個協助我們拿到「愛自己的力量」深度之旅</h2>
-                <div>
-                    <p>生存在這個物質世界中，越來越多人渴望身心靈並重發展，大家都希望「關係和諧」，大家都希望「心想事成」，但是，總覺得缺少了那麼一點點，甚至不斷被外在環境衝擊，想要更多的清晰明白感覺卻感覺永無止境。我們多數人的生活都在重複同一個模式而不自知！我們都在童年時做了一些決定影響未來的模式而不自知！</p>
-                    <p>這個體驗課程，將提供給您：</p>
-                    <p>一、檢視自己內在的想法，暸解自己現在的位置。</p>
-                    <p>二、介紹我們要去的地方，那個原本我們就圓滿具足的地方。</p>
-                    <p>三、根據暸解現在的位置，而做一個新的決定</p>
+                <a href="#"><img src="assets/images/pages/img-s2@2x.png"></a>
+                <h2 class="title">測試文章名稱測試文章名稱測試文章名稱測試文章名稱</h2>
+                <div class="short-content">
+                    生存在這個物質世界中，越來越多人渴望身心靈並重發展，大家都希望「關係和諧」，大家都希望「心想事成」，但是，總覺得缺少了那麼一點點，甚至不斷被外在環境衝擊，想要更多的清晰明白感覺卻感覺永無止境。我們多數人的生活都在重複同一個模式而不自知！我們都在童年時做了一些決定影響未來的模式而不自知
                 </div>
-                <div class="course-price">
-                    體驗會費用: NT$<span class="price-cma">500</span>
-                </div>
+                <div class="more-link"><a href="#">more</a></div>
             </div>
             <div class="col-lg-4 col-sm-4">
-                <h2 class="title pt_40">這是一個協助我們拿到「愛自己的力量」深度之旅</h2>
-                <div>
-                    <p>生存在這個物質世界中，越來越多人渴望身心靈並重發展，大家都希望「關係和諧」，大家都希望「心想事成」，但是，總覺得缺少了那麼一點點，甚至不斷被外在環境衝擊，想要更多的清晰明白感覺卻感覺永無止境。我們多數人的生活都在重複同一個模式而不自知！我們都在童年時做了一些決定影響未來的模式而不自知！</p>
-                    <p>這個體驗課程，將提供給您：</p>
-                    <p>一、檢視自己內在的想法，暸解自己現在的位置。</p>
-                    <p>二、介紹我們要去的地方，那個原本我們就圓滿具足的地方。</p>
-                    <p>三、根據暸解現在的位置，而做一個新的決定</p>
+                <a href="#"><img src="assets/images/pages/img-s3@2x.png"></a>
+                <h2 class="title">測試文章名稱測試文章名稱測試文章名稱測試文章名稱</h2>
+                <div class="short-content">
+                    生存在這個物質世界中，越來越多人渴望身心靈並重發展，大家都希望「關係和諧」，大家都希望「心想事成」，但是，總覺得缺少了那麼一點點，甚至不斷被外在環境衝擊，想要更多的清晰明白感覺卻感覺永無止境。我們多數人的生活都在重複同一個模式而不自知！我們都在童年時做了一些決定影響未來的模式而不自知
                 </div>
-                <div class="course-price">
-                    體驗會費用: NT$<span class="price-cma">500</span>
+                <div class="more-link"><a href="#">more</a></div>
+            </div>
+            <div class="col-lg-4 col-sm-4">
+                <a href="#"><img src="assets/images/pages/img-s4@2x.png"></a>
+                <h2 class="title">測試文章名稱測試文章名稱測試文章名稱測試文章名稱</h2>
+                <div class="short-content">
+                    生存在這個物質世界中，越來越多人渴望身心靈並重發展，大家都希望「關係和諧」，大家都希望「心想事成」，但是，總覺得缺少了那麼一點點，甚至不斷被外在環境衝擊，想要更多的清晰明白感覺卻感覺永無止境。我們多數人的生活都在重複同一個模式而不自知！我們都在童年時做了一些決定影響未來的模式而不自知
                 </div>
+                <div class="more-link"><a href="#">more</a></div>
+            </div>
+            <div class="col-lg-4 col-sm-4">
+                <a href="#"><img src="assets/images/pages/img-s5@2x.png"></a>
+                <h2 class="title">測試文章名稱測試文章名稱測試文章名稱測試文章名稱</h2>
+                <div class="short-content">
+                    生存在這個物質世界中，越來越多人渴望身心靈並重發展，大家都希望「關係和諧」，大家都希望「心想事成」，但是，總覺得缺少了那麼一點點，甚至不斷被外在環境衝擊，想要更多的清晰明白感覺卻感覺永無止境。我們多數人的生活都在重複同一個模式而不自知！我們都在童年時做了一些決定影響未來的模式而不自知
+                </div>
+                <div class="more-link"><a href="#">more</a></div>
+            </div>
+            <div class="col-lg-4 col-sm-4">
+                <a href="#"><img src="assets/images/pages/img-s6@2x.png"></a>
+                <h2 class="title">測試文章名稱測試文章名稱測試文章名稱測試文章名稱</h2>
+                <div class="short-content">
+                    生存在這個物質世界中，越來越多人渴望身心靈並重發展，大家都希望「關係和諧」，大家都希望「心想事成」，但是，總覺得缺少了那麼一點點，甚至不斷被外在環境衝擊，想要更多的清晰明白感覺卻感覺永無止境。我們多數人的生活都在重複同一個模式而不自知！我們都在童年時做了一些決定影響未來的模式而不自知
+                </div>
+                <div class="more-link"><a href="#">more</a></div>
             </div>
         </div>
+        <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                  <span class="sr-only">Previous</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item active">
+            <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
     </div>
 </div>
-<!-- START SECTION -->
-
-<!-- START SECTION -->
-<div class="section ptb_20 primary_bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h2>這部分要不要放呢?推廣體驗會?</h2>
-                <h2 class="title">2020體驗會日期<span class="square"></span><span class="title-line"></span></h2>
-                <div class="row">
-                    <div class="col-lg-3 col-sm-12">
-                        <div class="subtitle"><span class="square-middle"></span>2020/10/18(日)</div>
-                        <div class="subtitle"><span class="square-middle"></span>2020/10/18(日)</div>
-                        <div class="subtitle"><span class="square-middle"></span>2020/10/18(日)</div>
-                        <div class="subtitle"><span class="square-middle"></span>2020/10/18(日)</div>
-                    </div>
-                    <div class="col-lg-9 col-sm-12">
-                        <div class="detail">
-                            <span class="square-small"></span>
-                            時間：13:30~17:30 (14:00開始冥想)
-                        </div>
-                        <div class="detail">
-                            <span class="square-small"></span>
-                            上課地點：台北市中原街48號3樓
-                        </div>
-                        <div class="detail">
-                            <span class="square-small"></span>
-                            費用：500元 (現場繳費)
-                        </div>
-                        <div class="detail">
-                            <span class="square-small"></span>
-                            交通資訊：
-                            <ol class="detail">
-                                <li>捷運淡水線：雙連捷運站一號出口，轉搭公車518「中山老人住宅站」下車。</li>
-                                <li>捷運蘆洲線：行天宮站一號出口右轉步行約10分鐘。</li>
-                                <li>開車者：可以停在新生南北路高架橋下公有停車場。</li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
 
 </div>
 <!-- END MAIN CONTENT -->
