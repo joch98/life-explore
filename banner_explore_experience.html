@@ -202,8 +202,73 @@
 
 <!--FIXED COUPON IMAGE-->
 <div class="fixed-img" style="display: none;">
-    <img src="assets/images/pages/discount-icon@2x.png" class="discount-icon" style="display: none;">
+    <img src="assets/images/pages/discount-icon@2x.png" class="discount-icon" data-toggle="modal" data-target="#coupon" style="display: none;"></a>
+    
 </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="coupon" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+            <div class="coupon-form">
+                <img src="assets/images/coupon-header@2x.png" />
+                <form>
+                  <div class="row">
+                    <div class="col-6">
+                      <label>
+                        <input type="checkbox" class="largerCheckbox">生命探索體驗會
+                      </label>
+                    </div>
+                    <div class="col-6">
+                      <label>
+                        <input type="checkbox" class="largerCheckbox">關係工作坊體驗會
+                      </label>
+                    </div>
+                    <div class="col-6">
+                      <label>
+                        <input type="checkbox" class="largerCheckbox">生命探索體驗會
+                      </label>
+                    </div>
+                    <div class="col-6">
+                      <label>
+                        <input type="checkbox" class="largerCheckbox">關係工作坊體驗會
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                      <div class="form-group">
+                        <div class="row">
+                            <div class="col-6">
+                              <div class="form-group">
+                                <i class="fa fa-user"></i>
+                                <input type="text" class="form-control" name="name" placeholder="姓名" required="required" />
+                              </div>
+                            </div>
+                            <div class="col-6">
+                              <div class="form-group">
+                                <i class="fas fa-phone-volume"></i>
+                                <input type="phone" class="form-control" name="phone" placeholder="聯絡電話" required="required" />
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                          <i class="fa fa-envelope"></i>
+                          <input type="email" class="form-control" name="email" placeholder="Email帳號" required="required" />
+                      </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">送出資料</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 </div>
 <!-- END MAIN CONTENT -->

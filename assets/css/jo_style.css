@@ -195,6 +195,14 @@ ul.header_list {
 .navbar .navbar-nav .dropdown-item:hover{
   color: #ea5513;
 }
+.mega-menu-col.col-lg-6 {
+  padding-right: 0;
+  padding-left: 0;
+  background: #fff;
+}
+.dropdown-header {
+  font-weight: 700;
+}
 .bottom_header {
   background: #ffffff;
 }
@@ -613,6 +621,82 @@ body.active {
   margin-top: 20px;
   margin-bottom: 30px;
 }
+/*聯絡我們*/
+.form-control {
+  border-color: #d7d7d7;
+  box-shadow: none;
+}
+.form-control:focus, .btn:focus {
+  border-color: #79b4b4;
+  box-shadow: 0 0 8px #a0e2e2;
+}
+  .contact-form {
+  width: 500px;   
+      margin: 0 auto;
+      padding: 40px 0;
+  }
+  .contact-form form {
+      background: #fff;
+      padding: 40px;
+      border-radius: 20px;
+  }
+  .contact-form h2 {
+      color: #636363;
+      margin: 0 0 15px;
+      position: relative;
+      text-align: center;
+  }
+  .contact-form h2:before,
+  .contact-form h2:after {
+      content: "";
+      height: 2px;
+      width: 30%;
+      background: #d4d4d4;
+      position: absolute;
+      top: 50%;
+      z-index: 2;
+  }
+  .contact-form h2:before {
+      left: 0;
+  }
+  .contact-form h2:after {
+      right: 0;
+  }
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+  .contact-form .form-control, .contact-form .btn  {        
+      border-radius: 10px;
+  min-height: 40px;
+  transition: all 0.5s;
+  outline: none;
+  }
+  .contact-form .btn {
+      background: #79b4b4;
+  font-size: 16px;
+  min-height: 50px;
+  border: none;
+  }
+  .contact-form .btn:hover, .contact-form .btn:focus {
+      background: #a0e2e2;
+  outline: none;
+  }
+.contact-form .btn i {
+  margin-right: 5px;
+}
+  .contact-form label {
+      color: #bbb;
+  font-weight: normal;
+  }
+  .contact-form textarea {
+      resize: vertical;
+  }
+  .hint-text {
+      font-size: 15px;
+  text-align: center;
+      padding-bottom: 25px;
+      opacity: 0.8;
+  }
 a.social-media {
   border: 1px solid #FFF;
   border-radius: 3px;
@@ -1416,10 +1500,161 @@ span.square-small:after {
 .list-group {
   
 }
+/*優惠卷*/
+#coupon .modal-body {
+  width: auto; 
+  margin: 0 auto;
+  padding: 0;
+  background: #fff;
+  border-radius: 20px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+#coupon .modal-body img {
+  width: 100%;
+  margin-top: 0;
+}
+#coupon .modal-content {
+  width: 100%;
+  border-radius: 20px;
+}
+.coupon-form {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  background: #e6e6e7;
+  border-radius: 20px;
+}
+.coupon-form img {
+border-radius: 20px;
+}
+.coupon-form h2 {
+  color: #636363;
+  margin: 0 0 15px;
+  position: relative;
+  text-align: center;
+}
+.coupon-form h2:before,
+.coupon-form h2:after {
+  content: "";
+  height: 2px;
+  width: 30%;
+  background: #d4d4d4;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+}
+.coupon-form h2:before {
+  left: 0;
+}
+.coupon-form h2:after {
+  right: 0;
+}
+.coupon-form input[type=checkbox] {
+margin-right: 10px;
+margin-left: 8px;
+}
+.coupon-form label {
+color:#595656;
+margin-bottom: 25px;
+}
+.coupon-form .hint-text {
+  color: #999;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.coupon-form form {
+  background: #e6e6e7;
+  border-radius: 3px;
+  margin-bottom: 15px;
+/* 
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); */
+  padding: 30px 30px 0 30px;
+  border-radius: 20px;
+}
+.coupon-form .form-group {
+margin-bottom: 20px;
+}
+.coupon-form .form-group > .form-group .row .form-group{
+margin-bottom: 0;
+}
+.coupon-form .form-group {
+position: relative;
+}
+.coupon-form .form-group i {
+position: absolute;
+left: 13px;
+top: 11px;
+font-size: 18px;
+color: #1bb0b3;
+}
+.coupon-form .form-control{
+padding-left: 40px;
+}
+.coupon-form input[type="checkbox"] {
+  margin-top: 3px;
+}
+.coupon-form .btn {
+  font-size: 16px;
+  font-weight: bold;
+  min-width: 140px;
+  outline: none !important;
+  background: #79b4b4;
+  border-color: #79b4b4;
+}
+.coupon-form a {
+color: #fff;
+background: #79b5b4;
+text-decoration: none;
+}
+.coupon-form a:hover {
+  text-decoration: none;
+}
+.coupon-form form a {
+  color: #79b4b4;
+  text-decoration: none;
+}
+.coupon-form form a:hover {
+  text-decoration: underline;
+}
+.coupon-form .form-control,
+.coupon-form .btn {
+min-height: 40px;
+border-radius: 10px; 
+}
+.coupon-form .largerCheckbox {
+-ms-transform: scale(2); /* IE */
+-moz-transform: scale(2); /* FF */
+-webkit-transform: scale(2); /* Safari and Chrome */
+-o-transform: scale(2); /* Opera */
+transform: scale(2);
+padding: 10px;
+}
+.coupon-form .checkbox-inline {
+margin-bottom: 0px;
+}
+.coupon-form .modal-social-media {
+width: 90%;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+.coupon-form a.social-media {
+width: auto;
+border: 1px solid #79b5b4;
+}
+.coupon-form a.social-media i {
+margin-right: 20px;
+vertical-align: middle;
+font-size: 24px;
+}
 @media (max-width: 992px) {
   .navbar-collapse {
     position: fixed;
-    top: 137px;
+    top: 129px;
     left: 0;
     width: 75%;
     height: auto;

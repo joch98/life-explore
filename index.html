@@ -66,24 +66,27 @@
                                 </ul>
                             </div>   
                         </li>
-                        <li class="dropdown">
+                        <li class="dropdown dropdown-mega-menu">
                             <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">課程介紹</a>
                             <div class="dropdown-menu">
-                                <ul> 
-                                    <li><a class="dropdown-item nav-link nav_item" href="">生命探索</a></li> 
-                                    <li><a class="dropdown-item nav-link nav_item" href="">關係工作坊</a></li> 
-                                    <li><a class="dropdown-item nav-link nav_item" href="">關係進階工作坊</a></li> 
-                                    <li><a class="dropdown-item nav-link nav_item" href="">能量工作坊</a></li> 
-                                    <li><a class="dropdown-item nav-link nav_item" href="">個案諮商</a></li> 
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">體驗會介紹</a>
-                            <div class="dropdown-menu">
-                                <ul> 
-                                    <li><a class="dropdown-item nav-link nav_item" href="course_explore_experience.html">生命探索體驗會</a></li> 
+                                <ul class="mega-menu d-lg-flex">
+                                    <li class="mega-menu-col col-lg-6">
+                                        <ul> 
+                                            <li class="dropdown-header">主要課程</li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="">生命探索</a></li> 
+                                            <li><a class="dropdown-item nav-link nav_item" href="">關係工作坊</a></li> 
+                                            <li><a class="dropdown-item nav-link nav_item" href="">關係進階工作坊</a></li> 
+                                            <li><a class="dropdown-item nav-link nav_item" href="">能量工作坊</a></li> 
+                                            <li><a class="dropdown-item nav-link nav_item" href="">個案諮商</a></li> 
+                                        </ul>
+                                    </li>
+                                    <li class="mega-menu-col col-lg-6">
+                                        <ul>
+                                            <li class="dropdown-header">體驗會</li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="course_explore_experience.html">生命探索體驗會</a></li> 
                                     <li><a class="dropdown-item nav-link nav_item" href="">關係工作坊體驗會</a></li> 
+                                        </ul>
+                                    </li>
                                 </ul>
                             </div>
                         </li>
@@ -99,7 +102,7 @@
                             </div>
                         </li>
                         <li>
-                            <a class="nav-link nav_item" href="#">聯絡我們</a>
+                            <a href="#contactus" class="nav-link nav_item trigger-btn" data-toggle="modal">聯絡我們</a>
                         </li>
                     </ul>
                     <div class="search-container">
@@ -789,6 +792,29 @@
                 </div>
             </div>
             
+        </div>
+    </div>
+</div>
+<div id="contactus"  class="modal fade show" aria-modal="true" style="display: none;">
+    <div class="modal-dialog contact-form">
+        <div class="modal-content">
+            <form>
+                <h2>聯絡我們</h2>
+                    <p class="hint-text">如果你對課程有興趣或是想得到任何關於課程的訊息，請留下你想詢問的問題與聯絡方式，我們會盡快與你聯絡，謝謝。</p>
+                    <div class="form-group">
+                        <label for="inputName">姓名</label>
+                        <input type="text" class="form-control" id="inputName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputMessage">訊息</label>
+                        <textarea class="form-control" id="inputMessage" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-paper-plane"></i>送出訊息</button>
+            </form>
         </div>
     </div>
 </div>
