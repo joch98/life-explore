@@ -1679,7 +1679,136 @@ font-size: 24px;
 .photo-gallery .item {
   padding-bottom:30px;
 }
+/*select*/
+.select-search-bar {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+/*the container must be positioned relative:*/
+.custom-select {
+position: relative;
+font-family: Arial;
+width: 180px;
+display: inline-block;
+border-radius: 5px;
+border: 1px solid #79b5b4;
+font-family: Arial, Helvetica, "Microsoft JhengHei","微軟正黑體",sans-serif;
+font-size: 14px;
+margin-right: 10px;
+padding: unset;
+}
+.custom-select select {
+display: none; /*hide original SELECT element:*/
+}
 
+/*style the arrow inside the select element:*/
+.select-selected:after {
+position: absolute;
+content: "";
+top: 14px;
+right: 10px;
+width: 0;
+height: 0;
+border: 6px solid transparent;
+border-color: #79b5b4 transparent transparent transparent;
+}
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+border-color: transparent transparent #79b5b4 transparent;
+top: 7px;
+}
+/*style the items (options), including the selected item:*/
+.select-selected {
+color: #000;
+padding: 6px 16px;
+cursor: pointer;
+user-select: none;
+border-radius: 5px;
+background: #fff;
+height: 33px;
+}
+.select-items div {
+color: #000;
+/* border: 1px solid #45a0bb; */
+cursor: pointer;
+user-select: none;
+border-bottom: 0;
+padding: 15px;
+}
+/*style items (options):*/
+.select-items {
+position: absolute;
+background-color: #fff;
+top: 98%;
+left: 0;
+right: 0;
+z-index: 99;
+border-radius: 8px;
+border: 1px solid transparent;
+border-top: 0;
+border-color: rgba(238, 238, 238, .5);
+box-shadow: 1px 0px 5px rgba(238, 238, 238, .8);
+-webkit-box-shadow: 1px 0px 5px rgba(238, 238, 238, .8);
+-moz-box-shadow: 1px 0px 5px rgba(238, 238, 238, .8);
+}
+/*hide the items when the select box is closed:*/
+.select-hide {
+display: none;
+}
+.select-items div:hover, .same-as-selected {
+background-color: #acdcdc59;
+}
+.custom-search-input {
+border-radius: 5px;
+border: 1px solid #79b5b4;
+padding: 7px 16px;
+height: 36px;
+margin-right: 10px;
+width: 400px;
+}
+.custom-search-btn {
+border-radius: 5px;
+background: #79b5b4;
+color: #fff;
+padding: 0 16px;
+height: 36px;
+width: 100px;
+vertical-align: bottom;
+}
+.custom-search-btn i {
+  margin-right: 10px;
+}
+.custom-search-btn .fa-check-circle {
+  margin-left: 10px;
+  margin-right: 0;
+}
+.article_list .col-lg-4.col-sm-4{
+  margin-bottom: 40px;
+}
+.article_list.section h2.title {
+  color: #79b4b4;
+  font-size: 20px;
+  text-shadow: none;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+.article_list .short-content {
+  color: #888;
+  font-size: 14px;
+  line-height: 24px;
+  height: 172px;
+  overflow: hidden;
+}
+.article_list .more-link {
+  width: 100px;
+}
+.page-link {
+  color: #79b5b4;
+}
+.page-item.active .page-link {
+  background-color: #79b5b4;
+  border-color: #79b5b4;
+}
 @media (max-width: 992px) {
   .navbar-collapse {
     position: fixed;
