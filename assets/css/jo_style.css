@@ -718,8 +718,14 @@ a.social-media i {
 .section.pt_20 {
   padding-top: 20px;
 }
+.section.pt_30 {
+  padding-top: 30px;
+}
 .section.pb_20 {
   padding-bottom: 20px;
+}
+.section.pb_30 {
+  padding-bottom: 30px;
 }
 .section.pb_40 {
   padding-top: 0;
@@ -734,9 +740,9 @@ a.social-media i {
 .section.ptb_40 {
   padding: 40px 0;
 }
-.section.ptb_40_180 {
-  padding-top: 40px;
-  padding-bottom: 180px;
+.section.ptb_65_130 {
+  padding-top: 65px;
+  padding-bottom: 130px;
 }
 .section.pd_0 {
   padding: 0;
@@ -850,7 +856,7 @@ a.social-media i {
   margin-left: 5px;
   display: inline-block;
 }
-.thebeiginning {
+/* .thebeiginning {
   position: relative;
 }
 .thebeiginning:after {
@@ -863,6 +869,19 @@ a.social-media i {
   top: -39px;
   right: 13px;
   letter-spacing: 2px;
+} */
+.thebeiginning {
+  font-size: 64px;
+  color: rgb(235, 243, 245);
+  letter-spacing: 2px;
+  text-shadow: rgb(220, 220, 220) 1px 1px;
+  font-weight: 700;
+  z-index: 10;
+  position: relative;
+  font-family: arial, "Microsoft JhengHei", 微軟正黑體, sans-serif !important;
+}
+.thebeiginTitle {
+  margin-top: -2em;
 }
 .more-link {
   border-radius: 20px;
@@ -1085,9 +1104,9 @@ a.social-media i {
 }
 
 .btnbox-tabs.btnbox-tabs-standard .btnbox-tabs-nav li {
-    border-color: #80abae;
-    color: #80abae;
-    background-color: #fff;
+    /* border-color: #80abae; */
+    /* color: #80abae; */
+    /* background-color: #fff; */
     position: relative;
     border-radius: 2em;
     -webkit-transition: background-color 0s 0s;
