@@ -891,6 +891,13 @@ a.social-media i {
   text-align: center;
   font-weight: 600;
   margin-left: auto;
+  color: #b5b7b6; 
+  cursor: pointer;
+}
+.more-link1{
+  position: absolute;
+  right: 0;
+  bottom: -5rem;
 }
 .more-link a {
   color: #b5b7b6;
@@ -898,6 +905,7 @@ a.social-media i {
 .more-link:hover {
   background: #7b9288;
   border: 1px solid #7b9288;
+  color: #fff;
 }
 .more-link:hover a{
   color: #fff;
@@ -1699,7 +1707,7 @@ font-size: 24px;
   padding-bottom:30px;
 }
 .photo-gallery .limited-photo {
-  height: 180px;
+  height: 145px;
   overflow: hidden;
   display: block;
 }
@@ -1717,7 +1725,7 @@ font-size: 24px;
 .custom-select {
 position: relative;
 font-family: Arial;
-width: 180px;
+width: 290px;
 display: inline-block;
 border-radius: 5px;
 border: 1px solid #79b5b4;
@@ -1768,7 +1776,7 @@ padding: 15px;
 .select-items {
 position: absolute;
 background-color: #fff;
-top: 98%;
+top: 102%;
 left: 0;
 right: 0;
 z-index: 99;
@@ -1840,7 +1848,7 @@ vertical-align: bottom;
 }
 @media (max-width: 1200px) {
   .photo-gallery .limited-photo {
-    height: 150px;
+    height: 120px;
   }
 }
 @media (max-width: 992px) {
@@ -1897,6 +1905,12 @@ vertical-align: bottom;
   .about-us-img img {
     max-width: 50%;
   }
+  .thebeiginning {
+    font-size: 36px;
+  }
+  .thebeiginTitle {
+    margin-top: 0px;
+  }
   .section h2 .large-eng {
     font-size: 34px;
     display: block;
@@ -1926,12 +1940,12 @@ vertical-align: bottom;
     padding-top:25px;
     font-size:24px;
   }
-  .photo-gallery .limited-photo {
-    height: 170px;
+  .photo-gallery .limited-photo  {
+    height: 120px;
   }
 }
 @media (max-width:576px) {
   .photo-gallery .limited-photo {
-    height: 60vw;
+    height: 50vw;
   }
 }
