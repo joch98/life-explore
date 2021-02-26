@@ -1698,6 +1698,16 @@ font-size: 24px;
 .photo-gallery .item {
   padding-bottom:30px;
 }
+.photo-gallery .limited-photo {
+  height: 180px;
+  overflow: hidden;
+  display: block;
+}
+.photo-gallery .img-fluid {
+  max-width: 100%;
+  width: 100%;
+  overflow: hidden;
+}
 /*select*/
 .select-search-bar {
   margin-top: 40px;
@@ -1828,6 +1838,11 @@ vertical-align: bottom;
   background-color: #79b5b4;
   border-color: #79b5b4;
 }
+@media (max-width: 1200px) {
+  .photo-gallery .limited-photo {
+    height: 150px;
+  }
+}
 @media (max-width: 992px) {
   .navbar-collapse {
     position: fixed;
@@ -1910,5 +1925,13 @@ vertical-align: bottom;
     margin-bottom:25px;
     padding-top:25px;
     font-size:24px;
+  }
+  .photo-gallery .limited-photo {
+    height: 170px;
+  }
+}
+@media (max-width:576px) {
+  .photo-gallery .limited-photo {
+    height: 60vw;
   }
 }
