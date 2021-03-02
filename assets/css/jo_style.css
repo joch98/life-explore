@@ -134,7 +134,7 @@ ul.header_list {
 }
 .header_wrap:not([class*="bg_"]):not([class*="bg-"]) {
   background-color: #fff;
-  width: 100vw;
+  width: 100%;
 }
 .header_wrap.nav-fixed {
   box-shadow: 0 0 5px rgba(0,0,0,0.15);
@@ -1940,7 +1940,7 @@ vertical-align: bottom;
     padding-top:25px;
     font-size:24px;
   }
-  .photo-gallery .limited-photo  {
+  .photo-gallery .limited-photo {
     height: 120px;
   }
 }
