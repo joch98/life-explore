@@ -1343,6 +1343,36 @@ ul.tab-selection li img{
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.index-album {
+  position: relative;
+}
+.index-album .owl-theme .owl-controls {
+  display: block !important;
+}
+.index-album .owl-theme .custom-nav {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  right: 0;
+}
+.index-album .owl-theme .custom-nav .owl-prev, .index-album .owl-theme .custom-nav .owl-next {
+  position: absolute;
+  height: 100px;
+  color: inherit;
+  background: none;
+  border: none;
+  z-index: 100;
+}
+.index-album .owl-theme .custom-nav .owl-prev i, .index-album .owl-theme .custom-nav .owl-next i {
+  font-size: 2.5rem;
+  color: #79b4b4;
+}
+.index-album .owl-theme .custom-nav .owl-prev {
+  left: -25px;
+}
+.index-album .owl-theme .custom-nav .owl-next {
+  right: -25px;
+}
 
 .contactus_bg {
   background: #e6e6e6;
