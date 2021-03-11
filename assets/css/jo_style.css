@@ -1357,7 +1357,7 @@ ul.tab-selection li img{
 }
 .index-album .owl-theme .custom-nav .owl-prev, .index-album .owl-theme .custom-nav .owl-next {
   position: absolute;
-  height: 100px;
+  /* height: 100px; */
   color: inherit;
   background: none;
   border: none;
@@ -1368,10 +1368,10 @@ ul.tab-selection li img{
   color: #79b4b4;
 }
 .index-album .owl-theme .custom-nav .owl-prev {
-  left: -25px;
+  left: -35px;
 }
 .index-album .owl-theme .custom-nav .owl-next {
-  right: -25px;
+  right: -35px;
 }
 
 .contactus_bg {
@@ -1399,13 +1399,13 @@ ul.tab-selection li img{
 }
 .scrollup {
 	background-color: #79b4b4;
-	bottom: 20px;
+	bottom: 97px;
 	color: #ffffff;
 	font-size: 24px;
 	height: 40px;
 	line-height: 40px;
 	position: fixed;
-	right: 20px;
+	right: 34px;
 	text-align: center;
 	width: 40px;
 	z-index: 99;
@@ -1504,6 +1504,7 @@ span.square-small:after {
 }
 
 .fixed-img {
+  cursor: pointer;
   position: fixed;
   right: 10px;
   bottom: 450px;
@@ -1571,17 +1572,22 @@ span.square-small:after {
 #coupon .modal-body img {
   width: 100%;
   margin-top: 0;
+  margin-bottom: 0;
 }
 #coupon .modal-content {
   width: 100%;
   border-radius: 20px;
 }
+.coupon-form button{
+  margin: 0 0.5em;
+}
 .coupon-form {
   width: 600px;
-  height: 600px;
+  /* height: 600px; */
   margin: 0 auto;
   background: #e6e6e7;
   border-radius: 20px;
+  padding-bottom: 20px;
 }
 .coupon-form img {
 border-radius: 20px;
@@ -1615,6 +1621,7 @@ margin-left: 8px;
 .coupon-form label {
 color:#595656;
 margin-bottom: 25px;
+margin-left: 15px;
 }
 .coupon-form .hint-text {
   color: #999;
@@ -1641,8 +1648,8 @@ position: relative;
 }
 .coupon-form .form-group i {
 position: absolute;
-left: 13px;
-top: 11px;
+left: 18px;
+top: 10px;
 font-size: 18px;
 color: #1bb0b3;
 }
@@ -1688,6 +1695,9 @@ border-radius: 10px;
 transform: scale(2);
 padding: 10px;
 }
+.coupon-form input[type=radio] {
+margin-right: 0.8rem;
+}
 .coupon-form .checkbox-inline {
 margin-bottom: 0px;
 }
@@ -1708,7 +1718,40 @@ margin-right: 20px;
 vertical-align: middle;
 font-size: 24px;
 }
-
+.coupon-form .red-border{
+  border-color: rgba(255, 0, 0, 1);
+}
+.coupon-form .animation-flash {
+  animation: myfirst 0.2s linear;
+  -webkit-animation: myfirst 0.2s linear;
+  animation-iteration-count:infinite;
+  -webkit-animation-iteration-count:infinite;
+}
+@keyframes myfirst{
+  0%   { border-color: rgba(255, 0, 0, 1); }
+  25%  { border-color: rgb(255, 255, 255); }
+  50%  { border-color: rgba(255, 0, 0, 1); }
+  75%  { border-color: rgb(255, 255, 255); }
+  100% { border-color: rgba(255, 0, 0, 1); }
+}
+@-webkit-keyframes myfirst{
+  0%   { border-color: rgba(255, 0, 0, 1); }
+  25%  { border-color: rgb(255, 255, 255); }
+  50%  { border-color: rgba(255, 0, 0, 1); }
+  75%  { border-color: rgb(255, 255, 255); }
+  100% { border-color: rgba(255, 0, 0, 1); }
+}
+/* 兼容性前缀
+ ** Firefox: -moz
+ ** Safari & Chrome: -webkit
+ ** Opera: -o
+ */
+input[type="radio"],
+input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+  outline: none;
+}
 .photo-gallery {
   color:#313437;
   background-color:#fff;
@@ -1903,6 +1946,9 @@ vertical-align: bottom;
   }
   .nav-fixed .navbar-collapse {
       top: 36px;
+  }
+  .index-album .owl-theme .owl-controls {
+      display: none !important;
   }
 }
 @media screen and (max-width:768px) {
