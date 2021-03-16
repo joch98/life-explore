@@ -1919,6 +1919,42 @@ vertical-align: bottom;
   background-color: #79b5b4;
   border-color: #79b5b4;
 }
+.pagination {
+  justify-content: center;
+}
+.page-group ul li.page {
+  display: inline-block;
+  padding: 3px 8px;
+  border: 1px solid #eee;
+  cursor: pointer;
+}
+.page.prev {
+  margin-left: 0;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: #79b5b4;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+}
+
+.page.active {
+  z-index: 3;
+  color: #fff;
+  background-color: #79b5b4;
+  border-color: #79b5b4;
+}
+.page-nav {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .photo-gallery .limited-photo {
     height: 120px;

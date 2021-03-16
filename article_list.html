@@ -25,6 +25,7 @@
 <link rel="stylesheet" href="assets/css/slick-theme.css">
 <!-- Style CSS -->
 <link rel="stylesheet" href="assets/css/ekko-lightbox.css">
+<link rel="stylesheet" href="assets/css/pagination.css">
 <link rel="stylesheet" href="assets/css/jo_style.css">
 </head>
 
@@ -112,7 +113,9 @@
     </div>
 </header>
 <!-- END HEADER -->
-
+<style>
+    
+</style>
 <!-- START SECTION BANNER -->
 <div class="banner_section">
     
@@ -235,6 +238,7 @@
               </li>
             </ul>
           </nav>
+        <div id="pagination-tab-a"></div>
     </div>
 </div>
 
@@ -313,6 +317,7 @@
 <!-- scripts js --> 
 <script src="assets/js/scripts.js"></script>
 <script src="assets/js/ekko-lightbox.min.js"></script>
+<script src="assets/js/pagination.js"></script>
 <script src="assets/js/jo_main.js"></script>
 <script>    
     //select option樣式
@@ -399,6 +404,59 @@
     /*if the user clicks anywhere outside the select box,
         then close all select boxes:*/
     document.addEventListener("click", closeAllSelect);
+
+    //分頁
+function pagination(name) {
+    var container = $("#pagination-" + name);
+    var sources = (function () {
+      var result = [];
+    
+      for (var i = 1; i < 196; i++) {
+        result.push(i);
+      }
+    
+      return result;
+    })();
+   
+    var options = {
+     dataSource: sources,
+     callback: function (response, pagination) {
+      // window.console && console.log(response, pagination);
+   
+      var dataHtml = '<div class="row">';
+   
+      $.each(response, function (index, item) {
+       // dataHtml += '<li class="result-course">' + item + '</li>';
+       dataHtml += '<div class="col-lg-4 col-sm-4"><a href="#"><img src="assets/images/pages/img-s1@2x.png"></a>';
+       dataHtml +=      '<h2 class="title">'+ name + ' no.' + item + " 測試文章名稱測試文章名稱測試文章名稱測試文章名稱</h2>";
+       dataHtml +=      '<div class="short-content">生存在這個物質世界中，越來越多人渴望身心靈並重發展，大家都希望「關係和諧」，大家都希望「心想事成」，但是，總覺得缺少了那麼一點點，甚至不斷被外在環境衝擊，想要更多的清晰明白感覺卻感覺永無止境。我們多數人的生活都在重複同一個模式而不自知！我們都在童年時做了一些決定影響未來的模式而不自知</div>';
+       dataHtml +=      '<div class="more-link"><a href="#">more</a></div>';
+       dataHtml += '</div>';
+      });
+   
+      dataHtml += '</div>';
+   
+      container.prev().html(dataHtml);
+     },
+    };
+
+    //$.pagination(container, options);
+   
+    container.addHook("beforeInit", function () {
+    //  window.console && console.log("beforeInit...");
+    });
+    container.pagination(options);
+   
+    container.addHook("beforePageOnClick", function () {
+    //  window.console && console.log("beforePageOnClick...");
+     //return false
+    });
+    }
+    pagination("tab-a");
+    if ($(window).width() < 420) {
+        function pagination(name) { 
+        }
+    }
 </script>
 </body>
 </html>
