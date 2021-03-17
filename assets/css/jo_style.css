@@ -1935,11 +1935,16 @@ vertical-align: bottom;
 .pagination {
   justify-content: center;
 }
+.pagination-body{
+  height: 860px;
+}
 .page-group ul li.page {
   display: inline-block;
-  padding: 3px 8px;
+  padding: 5px 5px;
   border: 1px solid #eee;
   cursor: pointer;
+  width: 40px;
+  text-align: center;
 }
 .page.prev {
   margin-left: 0;
