@@ -1398,7 +1398,7 @@ ul.tab-selection li img{
   color: #fff;
 }
 .scrollup {
-	background-color: #79b4b4;
+	background-color: #FCD475;
 	bottom: 97px;
 	color: #ffffff;
 	font-size: 24px;
@@ -1411,7 +1411,7 @@ ul.tab-selection li img{
 	z-index: 99;
 }
 .scrollup:hover {
-	background-color: #ea5513;
+	background-color: #FCD475;
 	color:#fff;
 }
 .scrollup:focus {
@@ -1527,6 +1527,12 @@ span.square-small:after {
   float: right;
   margin-right:
 }
+.member-sharing-right .share_content{
+  font-family: 新細明體,serif;
+  line-height: 26px;
+  color: #7d7d7d;
+  margin-top: 1.5em;
+}
 /*課程介紹*/
 .course-page .course-header {
   position: relative;
@@ -1544,6 +1550,7 @@ span.square-small:after {
 }
 .course-page .course-price {
   /* display: inline-block; */
+  margin-top: 2em;
   width: 100%;
   padding: 5px;
   border: 1px solid #5d5d5d;
@@ -1553,6 +1560,12 @@ span.square-small:after {
   margin-left: 5px;
   color: #ea5513;
   text-shadow: 1px 1px #d1d2d3;
+}
+.course-content{
+  font-size: 17px;
+  line-height: 28px;
+  margin: 15px 0;
+  color: #4F4F4F;
 }
 /*文章列表*/
 .list-group {
@@ -1954,7 +1967,6 @@ vertical-align: bottom;
 .page-nav {
   display: none;
 }
-
 @media (max-width: 1200px) {
   .photo-gallery .limited-photo {
     height: 120px;
