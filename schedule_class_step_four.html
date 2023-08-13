@@ -9,7 +9,7 @@
     <meta name="keywords" content="" />
 
     <!-- SITE TITLE -->
-    <title>Explore-Life 重聽課程 Step 2</title>
+    <title>Explore-Life 重聽課程 Step 4</title>
     <!-- Favicon Icon -->
     <link
       rel="shortcut icon"
@@ -35,49 +35,6 @@
     <link rel="stylesheet" href="assets/css/jo_style.css" />
   </head>
   <style>
-    ul {
-      list-style-type: none;
-    }
-    #dateList li {
-      display: flex;
-      align-items: center;
-    }
-    .delet-btn {
-      border-radius: 16px;
-      background: #e99315;
-      padding: 4px 16px;
-      margin: 4px 16px;
-    }
-    .month-container {
-      margin-bottom: 20px;
-      text-align: center;
-      height: 400px;
-    }
-
-    table {
-      width: 60%;
-      border-collapse: collapse;
-      text-align: center;
-      margin: 0 auto;
-    }
-
-    th,
-    td {
-      text-align: center !important;
-      padding: 8px;
-      text-align: left;
-      border-bottom: 1px solid #ddd;
-      cursor: pointer;
-    }
-
-    th {
-      text-align: center;
-      background-color: #f2f2f2;
-    }
-
-    td.selected {
-      background-color: #ffcc00;
-    }
   </style>
   <body>
     <!-- START HEADER -->
@@ -269,38 +226,42 @@
           <div class="row">
             <div class="col-lg-3 col-sm-12 primary_bg_dark white-text p-4">
               <div id="selectedDates">
-                <div>STEP 2</div>
-                <div class="mt-1">您選擇的補課時間</div>
-                <ul id="dateList"></ul>
+                <div>STEP 1</div>
+                <div class="mt-1">您選擇的課期</div>
+                <div class="ml-4">
+                  <div>No. 45期</div>
+                <div><span>第六堂</span>/<span>上午時段</span></div>
+                </div>
               </div>
+              <div class="mt-4">STEP 2</div>
+              <div class="mt-1">您選擇的補課日期</div>
+              <div class="ml-4">2023/01/15</div>
               <div class="mt-4">STEP 3</div>
-              <div class="mt-1">您選擇的課期時段</div>
-              <div>
-                <select class="custom-select width-100 pl-2">
-                  <option selected>請選擇時段</option>
-                  <option value="morning">早上 09:30-12:30</option>
-                  <option value="afternoon">下午 14:00-17:00</option>
-                  <option value="night">晚上 17:30-21:30</option>
-                </select>
-              </div>
-              <div class="d-flex flex-column align-right mt_60 text-16 mr-4">
-                <div class="secondary-text cursor-pointer">
-                  確認<i class="fas fa-solid fa-check ml-2 text-16"></i>
-                </div>
-                <div class="mt-2 cursor-pointer">
-                  下一步<i
-                    class="fas fa-solid fa-chevron-right ml-2 text-16"
-                  ></i>
-                </div>
-              </div>
+              <div class="mt-1">您選擇的補課時間</div>
+              <div class="ml-4">下午 14:00-17:00</div>
+              <div class="mt-4">STEP 4</div>
+              <div class="mt-1">填寫個人資料</div>
+              <div class="mt-4">STEP 5</div>
+              <div class="mt-1">匯款資訊</div>
             </div>
             <div class="col-lg-9 col-sm-12">
-              <div class="d-flex text-24 primary-text width-60 mx-auto mb-4 justify-content-between">
-                <button onclick="prevMonth()" class="mr-4"><i class="fas fa-solid fa-chevron-left mr-2 text-16"></i> 上個月</button>
-                <div>2013</div>
-                <button onclick="nextMonth()" class="ml-4">下個月 <i class="fas fa-solid fa-chevron-right ml-2 text-16"></i></button>
+              <div class="width-80 mx-auto mb-4 pt_20">
+                <div class="p-3 primary-text grey_bg">
+                  <div class="text-16">您預約的課程內容</div>
+                  <div class="d-flex mt-2"><div class="ml-2 mr-4 pt-2">課期時段//</div><div class="text-24">No.45期 / 第六堂 / 上午時段</div></div>
+                  <div class="d-flex mt-2"><div class="ml-2 mr-4 pt-2">補課日期//</div><div class="text-24">2023 / 01 / 30 (一)</div></div>
+                  <div class="d-flex mt-2"><div class="ml-2 mr-4 pt-2">補課時間//</div><div class="text-24">下午 14:00-17:00</div></div>
+                </div>
+                <div class="ml-3 mt-4 primary-text text-20">匯款資訊</div>
+                <div class="ml-3 mt-2 border-bttom">費用$1,000元整</div><!--(價錢若選半天為$00.一天為$1000)-->
+                <div class="ml-3 mt-2 border-bttom">中國信託822中壢分行戶名:蘇筠榕【1295-3751-1901】</div>
+                <div class="ml-3 mt-4 primary-text text-16">
+                  ※溫馨提醒<br />
+                親愛的學員請您於48小時內匯款,匯款後請登入確認以便<br />
+                完成預約,我們將為您做後續安排。謝謝您~
+                </div>
+                </div>
               </div>
-              <div id="calendar"></div>
             </div>
           </div>
         </div>

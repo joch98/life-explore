@@ -79,9 +79,16 @@ button:focus {
 .mobile-only {
   display: none;
 }
+.grey_bg {
+  background: #eee;
+}
 .primary_bg {
   background: #79b4b4;
   color: #fff;
+}
+.primary_bg_dark {
+  background: #7AAFAF;
+  color: #FFF;
 }
 .primary-btn {
   background: #79b4b4;
@@ -99,6 +106,9 @@ button:focus {
 .text-16 {
   font-size: 16px;
 }
+.text-18 {
+  font-size: 18px;
+}
 .text-20 {
   font-size: 20px;
 }
@@ -108,8 +118,17 @@ button:focus {
 .text-36 {
   font-size: 36px;
 }
+.width-90 {
+  width: 90%;
+}
+.width-80 {
+  width: 80%;
+}
 .width-60 {
   width: 60%;
+}
+.border-bttom {
+  border-bottom: 1px solid #eee;
 }
 ul, li, ol {
   margin: 0;
