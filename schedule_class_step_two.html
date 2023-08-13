@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- SITE TITLE -->
+    <title>Explore-Life 重聽課程 Step 2</title>
+    <!-- Favicon Icon -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/images/favicon.png"
+    />
+    <!-- Latest Bootstrap min CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <!--- owl carousel CSS-->
+    <link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.css" />
+    <link
+      rel="stylesheet"
+      href="assets/owlcarousel/css/owl.theme.default.min.css"
+    />
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/slick-theme.css" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/ekko-lightbox.css" />
+    <link rel="stylesheet" href="assets/css/jo_style.css" />
+  </head>
+  <style>
+    ul {
+      list-style-type: none;
+    }
+    #dateList li {
+      display: flex;
+      align-items: center;
+    }
+    .delet-btn {
+      border-radius: 16px;
+      background: #e99315;
+      padding: 4px 16px;
+      margin: 4px 16px;
+    }
+    .month-container {
+      margin-bottom: 20px;
+      text-align: center;
+      height: 400px;
+    }
+
+    table {
+      width: 60%;
+      border-collapse: collapse;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    th,
+    td {
+      text-align: center !important;
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+      cursor: pointer;
+    }
+
+    th {
+      text-align: center;
+      background-color: #f2f2f2;
+    }
+
+    td.selected {
+      background-color: #ffcc00;
+    }
+  </style>
+  <body>
+    <!-- START HEADER -->
+    <header class="header_wrap fixed-top header_with_topbar">
+      <div class="top-header">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-12">
+              <div class="logo">
+                <a href="index.html"
+                  ><img
+                    src="assets/images/logo.png"
+                    alt="生命探索"
+                    class="logo-img"
+                /></a>
+                <div class="f-right">
+                  <ul class="header_list">
+                    <li>
+                      <a href="login.html"
+                        ><i class="fas fa-user"></i><span>註冊/登入</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="login.html"
+                        ><i class="fab fa-facebook-square"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom_header">
+        <div class="container pos-relative">
+          <nav class="navbar navbar-expand-lg">
+            <button
+              class="navbar-toggler collapsed"
+              type="button"
+              data-toggle="slide-collapse"
+              data-target="#navbarContent"
+              aria-expanded="false"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+              <ul class="navbar-nav">
+                <li class="dropdown">
+                  <a
+                    data-toggle="dropdown"
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    >關於生命探索</a
+                  >
+                  <div class="dropdown-menu">
+                    <ul>
+                      <li>
+                        <a class="dropdown-item nav-link nav_item" href="#"
+                          >我們的故事</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item nav-link nav_item" href="#"
+                          >關於筠榕</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="dropdown">
+                  <a
+                    class="dropdown-toggle nav-link"
+                    href="#"
+                    data-toggle="dropdown"
+                    >課程介紹</a
+                  >
+                  <div class="dropdown-menu">
+                    <ul>
+                      <li>
+                        <a class="dropdown-item nav-link nav_item" href=""
+                          >生命探索</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item nav-link nav_item" href=""
+                          >關係工作坊</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item nav-link nav_item" href=""
+                          >關係進階工作坊</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item nav-link nav_item" href=""
+                          >能量工作坊</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item nav-link nav_item" href=""
+                          >個案諮商</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="dropdown">
+                  <a
+                    class="dropdown-toggle nav-link"
+                    href="#"
+                    data-toggle="dropdown"
+                    >體驗會介紹</a
+                  >
+                  <div class="dropdown-menu">
+                    <ul>
+                      <li>
+                        <a class="dropdown-item nav-link nav_item" href=""
+                          >生命探索體驗會</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item nav-link nav_item" href=""
+                          >關係工作坊體驗會</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="dropdown">
+                  <a
+                    class="dropdown-toggle nav-link"
+                    href="#"
+                    data-toggle="dropdown"
+                    >學員分享</a
+                  >
+                  <div class="dropdown-menu">
+                    <ul>
+                      <li>
+                        <a class="dropdown-item nav-link nav_item" href=""
+                          >生命探索體驗會</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item nav-link nav_item" href=""
+                          >生命探索</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item nav-link nav_item" href=""
+                          >關係工作坊體驗會</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item nav-link nav_item" href=""
+                          >關係工作坊</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a class="nav-link nav_item" href="#">聯絡我們</a>
+                </li>
+              </ul>
+              <div class="search-container">
+                <input type="text" class="search-bar" />
+                <button type="submit" class="search-btn">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- START SECTION BANNER -->
+    <div class="banner_section"></div>
+    <!-- END SECTION BANNER -->
+    <!-- START BREADCRUMB SECTION -->
+    <!-- END BREADCRUMB SECTION -->
+    <!-- END MAIN CONTENT -->
+    <div class="main_content">
+      <!-- START SECTION -->
+      <div class="section ptb_40">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-sm-12 primary-bg white-text p-4">
+              <div id="selectedDates">
+                <div>STEP 2</div>
+                <div class="mt-1">您選擇的補課時間</div>
+                <ul id="dateList"></ul>
+              </div>
+              <div class="mt-4">STEP 3</div>
+              <div class="mt-1">您選擇的課期時段</div>
+              <div>
+                <select class="custom-select width-100 pl-2">
+                  <option selected>請選擇時段</option>
+                  <option value="morning">早上 09:30-12:30</option>
+                  <option value="afternoon">下午 14:00-17:00</option>
+                  <option value="night">晚上 17:30-21:30</option>
+                </select>
+              </div>
+              <div class="d-flex flex-column align-right mt_60 text-16 mr-4">
+                <div class="secondary-text cursor-pointer">
+                  確認<i class="fas fa-solid fa-check ml-2 text-16"></i>
+                </div>
+                <div class="mt-2 cursor-pointer">
+                  下一步<i
+                    class="fas fa-solid fa-chevron-right ml-2 text-16"
+                  ></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-9 col-sm-12">
+              <div class="d-flex text-24 primary-text width-60 mx-auto mb-4 justify-content-between">
+                <button onclick="prevMonth()" class="mr-4"><i class="fas fa-solid fa-chevron-left mr-2 text-16"></i> 上個月</button>
+                <div>2013</div>
+                <button onclick="nextMonth()" class="ml-4">下個月 <i class="fas fa-solid fa-chevron-right ml-2 text-16"></i></button>
+              </div>
+              <div id="calendar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- START SECTION -->
+    </div>
+    <!-- END MAIN CONTENT -->
+
+    <!-- START FOOTER -->
+    <footer class="">
+      <!-- START SECTION -->
+      <!-- <div class="section pd_20">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-sm-12">
+                <h2 class="title">聯絡我們<span class="large-eng">contact us</span></h2>
+                <div class="sub-title"></div>
+            </div>	
+        </div>
+    </div>
+</div> -->
+      <div class="section pd_40 contactus_bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-sm-12">
+              <img src="assets/images/footer-1@3x.png" />
+              <ul class="info-list">
+                <li class="info">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>台北市中山區中原街48號3樓</span>
+                </li>
+                <li class="info">
+                  <i class="fas fa-user"></i>
+                  <span>
+                    <span>王藝樺</span>
+                    <span>0938-118-192</span>
+                  </span>
+                </li>
+                <li class="info">
+                  <i class="fas fa-user"></i>
+                  <span>
+                    <span>王藝樺</span>
+                    <span>0938-118-192</span>
+                  </span>
+                </li>
+                <li class="info">
+                  <i class="fas fa-user"></i>
+                  <span>
+                    <span>王藝樺</span>
+                    <span>0938-118-192</span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <img src="assets/images/footer-2@2x.png" />
+              <ul class="info-list">
+                <li class="info">
+                  <i class="fas fa-envelope-open-text"></i>
+                  <span>info.dicoverlife@gmail.com</span>
+                </li>
+                <li class="info">
+                  <i class="fab fa-facebook-square"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END SECTION -->
+    </footer>
+    <!-- END FOOTER -->
+
+    <a href="#" class="scrollup" style="display: none"
+      ><i class="fas fa-angle-up"></i
+    ></a>
+
+    <!-- Latest jQuery -->
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <!-- jQuery UI-->
+    <script src="assets/js/jquery-ui.js"></script>
+    <!-- Latest compiled and minified Bootstrap -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- owl-carousel min js  -->
+    <script src="assets/owlcarousel/js/owl.carousel.min.js"></script>
+    <!-- slick js -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- imageMapResizer js -->
+    <script src="assets/js/imageMapResizer.js"></script>
+    <!-- scripts js -->
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/ekko-lightbox.min.js"></script>
+    <script src="assets/js/jo_main.js"></script>
+    <script>
+      var currentMonth = 0; // 當前顯示的月份
+      var selectedMonth = 0; // 選中的月份
+      var selectedDates = []; // 已選擇的日期列表
+
+      // 生成日曆
+      function generateCalendar() {
+        var calendarDiv = document.getElementById("calendar");
+        calendarDiv.innerHTML = ""; // 清空日曆内容
+
+        var monthDiv = document.createElement("div");
+        monthDiv.className = "month-container";
+
+        var table = document.createElement("table");
+        var headerRow1 = document.createElement("tr");
+        var headerRow2 = document.createElement("tr");
+
+        // 顯示月曆
+        var monthName = getMonthName(currentMonth);
+        var monthCell = document.createElement("th");
+        monthCell.textContent = monthName;
+        monthCell.colSpan = 7;
+        headerRow1.appendChild(monthCell);
+
+        // 顯示一到日英文縮寫
+        var weekdays = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+        for (var i = 0; i < weekdays.length; i++) {
+          var th = document.createElement("th");
+          th.textContent = weekdays[i];
+          headerRow2.appendChild(th);
+        }
+
+        table.appendChild(headerRow1);
+        table.appendChild(headerRow2);
+
+        // 計算該月份的天數
+        var daysInMonth = new Date(2023, currentMonth + 1, 0).getDate();
+
+        var date = 1;
+
+        for (var i = 0; i < 6; i++) {
+          var row = document.createElement("tr");
+
+          for (var j = 0; j < 7; j++) {
+            var td = document.createElement("td");
+
+            if (i === 0 && j < getFirstDayOfMonth(2023, currentMonth)) {
+              // 該月分的第一天之前的空格
+              td.textContent = "";
+            } else if (date > daysInMonth) {
+              // 該月分的最後一天之後的空格
+              break;
+            } else {
+              var monthText = (currentMonth + 1).toString().padStart(2, "0"); // 補零
+              var dateText = date.toString().padStart(2, "0"); // 補零
+              var fullDateText = monthText + "-" + dateText;
+
+              td.textContent = date;
+              td.dataset.date = fullDateText;
+
+              // 檢查是否為已選擇的日期
+              if (selectedDates.includes(fullDateText)) {
+                td.classList.add("selected");
+              }
+
+              // 添加點擊事件
+              td.addEventListener("click", function () {
+                var selectedDateList = document.getElementById("dateList");
+                var selectedDateItem = document.createElement("li");
+                var clickedDate = this.dataset.date;
+
+                selectedDateItem.textContent = clickedDate;
+
+                // 添加删除按钮
+                var deleteButton = document.createElement("button");
+                deleteButton.textContent = "删除";
+                deleteButton.classList.add("delet-btn");
+                deleteButton.addEventListener("click", function () {
+                  selectedDateItem.remove();
+
+                  // 從已選擇的日期列表中移除該日期
+                  var index = selectedDates.indexOf(clickedDate);
+                  if (index !== -1) {
+                    selectedDates.splice(index, 1);
+                  }
+
+                  // 移除選中狀態和顏色
+                  var clickedTd = document.querySelector(
+                    "td[data-date='" + clickedDate + "']"
+                  );
+                  clickedTd.classList.remove("selected");
+                  clickedTd.style.backgroundColor = "white";
+                });
+
+                selectedDateItem.appendChild(deleteButton);
+                selectedDateList.appendChild(selectedDateItem);
+
+                // 切换選中狀態
+                this.classList.toggle("selected");
+
+                // 切换颜色
+                if (this.classList.contains("selected")) {
+                  this.style.backgroundColor = "#ffcc00";
+                  selectedDates.push(clickedDate);
+                } else {
+                  var index = selectedDates.indexOf(clickedDate);
+                  if (index !== -1) {
+                    selectedDates.splice(index, 1);
+                  }
+                }
+              });
+
+              date++;
+            }
+
+            row.appendChild(td);
+          }
+
+          table.appendChild(row);
+        }
+
+        monthDiv.appendChild(table);
+        calendarDiv.appendChild(monthDiv);
+
+        selectedMonth = currentMonth; // 更新選中的月份
+      }
+
+      // 獲取月份名稱
+      function getMonthName(month) {
+        var months = [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December",
+        ];
+        return months[month];
+      }
+
+      // 獲取該月份第一天是星期幾
+      function getFirstDayOfMonth(year, month) {
+        return new Date(year, month, 1).getDay();
+      }
+
+      // 切换到上個月
+      function prevMonth() {
+        currentMonth--; // 減少一個月
+        if (currentMonth < 0) {
+          currentMonth = 11; // 如果當前月份小於0，則切换到12月份
+        }
+
+        generateCalendar(); // 重新生成日曆
+      }
+
+      // 切换到下個月
+      function nextMonth() {
+        currentMonth++; // 增加一個月
+        if (currentMonth > 11) {
+          currentMonth = 0; // 如果當前月份大於11，則切换到1月份
+        }
+
+        generateCalendar(); // 重新生成日曆
+      }
+
+      // 生成初始日曆
+      generateCalendar();
+    </script>
+  </body>
+</html>

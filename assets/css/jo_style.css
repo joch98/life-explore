@@ -57,8 +57,17 @@ button:focus {
 .mt_20 {
   margin-top: 20px;
 }
+.mt_60 {
+  margin-top: 60px;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
 .f-right {
   float: right;
+}
+.align-right {
+  text-align:  right;
 }
 .align-center {
   text-align: center;
@@ -78,10 +87,30 @@ button:focus {
   background: #79b4b4;
   color: #fff;
 }
+.primary-text {
+  color: #79b4b4;
+}
+.secondary-text {
+  color: #E99315;
+}
 .white-text {
   color: #fff;
 }
-
+.text-16 {
+  font-size: 16px;
+}
+.text-20 {
+  font-size: 20px;
+}
+.text-24 {
+  font-size: 24px;
+}
+.text-36 {
+  font-size: 36px;
+}
+.width-60 {
+  width: 60%;
+}
 ul, li, ol {
   margin: 0;
   padding: 0;
@@ -1418,7 +1447,8 @@ ul.tab-selection li img{
 	color:#fff;
 }
 /* 麵包屑 */
-.breadcrumb_bg {
+.breadcrumb_bg,
+.primary-bg {
   background: rgb(121 180 180 / .5);
 }
 .breadcrumb {
@@ -1820,6 +1850,9 @@ font-family: Arial, Helvetica, "Microsoft JhengHei","微軟正黑體",sans-serif
 font-size: 14px;
 margin-right: 10px;
 padding: unset;
+}
+.custom-select.width-100 {
+  width: 100%;
 }
 .custom-select select {
 display: none; /*hide original SELECT element:*/
